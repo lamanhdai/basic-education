@@ -8,7 +8,6 @@
       $pageTop = null,
       $win = $(window),
       $header = null,
-      $top_header = null,
       $navigation = null,
       $products = null,
       $item= null,
@@ -27,7 +26,6 @@
       $pageTop = $('.page_top a');
 
       $header = $('#header');
-      $top_header = $header.find('.top_header');
       $navigation = $header.find('.navigation');
 
       smoothScroll();
