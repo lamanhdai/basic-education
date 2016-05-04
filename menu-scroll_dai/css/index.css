@@ -1,0 +1,125 @@
+/*---------------------------------------
+  common css
+----------------------------------------*/
+html{overflow-y:scroll;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}table{border-collapse:collapse;border-spacing:0;}caption,th{text-align:left;}q:before,q:after{content:'';}object,embed{vertical-align:top;}hr,legend{display:none;}h1,h2,h3,h4,h5,h6{font-size:100%;}img,abbr,acronym,fieldset{border:0;}ul li{list-style-type:none;}a,label{cursor:pointer;}img{vertical-align:bottom;margin:0;padding:0;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+body {
+  font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,  游ゴシック, YuGothic, sans-serif;
+  min-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.7;
+  overflow: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  outline: none;
+}
+/* header css
+----------------------------------------*/
+#header {
+  z-index: 999;
+  background: #fff;
+  width: 100%;
+  position: relative;
+}
+#header .inner {
+  margin: 0 auto;
+  overflow: hidden;
+}
+#header .navigation {
+  background: #26499d;
+  overflow: hidden;
+}
+#header .navigation .inner {
+  padding: 0 30px;
+}
+#header.fixed {
+  margin-bottom: 60px;
+}
+#header.fixed .navigation {
+  width: 100%;
+  min-width: 1200px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 999;
+}
+#header .global_navi {
+  overflow: hidden;
+  float: left;
+}
+#header .global_navi li {
+  float: left;
+}
+#header .global_navi a {
+  color: #fff;
+  text-decoration: none;
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+}
+#header .global_navi a:hover,
+#header .global_navi a.active {
+  background: #2e5ab3;
+}
+
+/*---------------------------------------
+  #footer
+----------------------------------------*/
+#footer {
+  background: #3d4b58;
+}
+#copyright {
+  width: 100%;
+}
+#copyright .inner {
+  background: none;
+}
+#copyright p {
+  text-align: center;
+  color: #fff;
+  padding: 16px 0 15px;
+  font-size: 14px;
+}
+
+/*---------------------------------------
+  #contents
+----------------------------------------*/
+#contents {
+  width: 100%;
+}
+#contents .inner {
+  max-width: 1182px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+#contents .article {
+  padding-bottom: 80px;
+}
+
+/*  #introduction
+----------------------------------------*/
+#introduction .title_introduct {
+  text-align: center;
+  padding-top: 50px;
+  color: #26499d;
+}
+
+#contents .main_title {
+  background: #2e5ab3;
+  text-align: center;
+  padding: 47px 0 0;
+}
+
+#contents .page_top {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 999;
+}
