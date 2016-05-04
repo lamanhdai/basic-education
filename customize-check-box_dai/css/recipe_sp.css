@@ -1,0 +1,53 @@
+@charset "utf-8";
+body {
+  font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ ProN W3","ＭＳ Ｐゴシック", "MS-PGothic", "Droid Sans", sans-serif;
+  font-size: 76%;
+  width: 100%;
+  min-width: 100%;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.inner {
+  width: 100%;
+}
+
+/*----------------------------------------
+  .container
+----------------------------------------*/
+.recipe_search_mid {
+  padding: 10px 15px 40px;
+}
+.check_list {
+  margin-top: 30px;
+}
+.check_list + .check_list {
+  margin-top: 18px;
+}
+.check_list .title_check {
+  font-size: 109%;
+  min-height: 32px;
+  line-height: 32px;
+  padding-left: 35px;
+}
+.check_list .title_check span {
+  font-size: 10px;
+}
+.check_list > ul {
+  margin: 25px 5.8% 0;
+}
+.check_list > ul li {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.check_list > ul li span {
+  font-size: 100%;
+  margin-left: 4px;
+}
+.search_input {
+  margin-top: 20px;
+}

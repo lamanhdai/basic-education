@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*---------------------------------------
+  RESET CSS(Do not touch)
+----------------------------------------*/
+html{overflow-y:scroll;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}table{border-collapse:collapse;border-spacing:0;}caption,th{text-align:left;}q:before,q:after{content:'';}object,embed{vertical-align:top;}hr,legend{display:none;}h1,h2,h3,h4,h5,h6{font-size:100%;}img,abbr,acronym,fieldset{border:0;}ul li{list-style-type:none;}a,label{cursor:pointer;}img{vertical-align:bottom;margin:0;padding:0;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+/*---------------------------------------
+  common
+----------------------------------------*/
+a {
+  color: #1b1b1b;
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  color: #f78b1b;
+  text-decoration: underline;
+}
+body {
+  min-width: 1000px;
+  font-size: 76%;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #402020;;
+  line-height: 1.7;
+  overflow: hidden;
+}
+.inner {
+  width: 960px;
+  margin: 0 auto;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0.1px;
+  font-size: 0.1em;
+  line-height: 0;
+  clear: both;
+}
+/*----------------------------------------
+  #contents
+----------------------------------------*/
+.recipe_search_mid {
+  background: #ffd200;
+  padding: 17px 40px 25px;
+}
+.check_list > ul {
+  overflow: hidden;
+  margin-top: 20px;
+}
+.check_list > ul li {
+  float: left;
+  width: 25%;
+  margin-bottom: 10px;
+}
+.check_list > ul li label {
+  display: inline-block;
+}
+.check_list > ul li input {
+  vertical-align: middle;
+}
+.check_list > ul li span {
+  display: inline-block;
+  font-size: 117%;
+  margin-left: 7px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.class_checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background: url(../image/bg-checkbox.png) 0 0 no-repeat;
+}
+.class_checkbox.checked {
+  background: url(../image/bg-checkbox.png) 0 -24px no-repeat;
+}
