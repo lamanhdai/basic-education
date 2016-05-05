@@ -1,0 +1,27 @@
+.wrapper {
+  margin: 0 auto;
+}
+.wrapper h1{
+    text-align: center;
+}
+.map_content {
+  overflow:hidden;
+  width:500px;
+  height:300px;
+  resize:none;
+  max-width:100%;
+  border: 1px solid #000000;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .map_content{
+    width: 100%;
+  }
+}
+.view_lagre {
+  text-align: right;
+  margin-top: 6px;
+}
+.view_lagre a {
+  color: #585858;
+}
