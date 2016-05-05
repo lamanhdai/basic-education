@@ -1,12 +1,15 @@
 ;(function($, win) {
     'use strict';
 
-    var Menu = $.Menu = (function() {
+    var Menu = $.Menu = (function(e) {
         var
             $win = null,
-            $menu = null,
-            $openMenuSP = null,
-            $pushMenu = null,
+            $navItem = null,
+            $menuGlobal = null,
+            $navbarDropdown = null,
+
+            $btnMenu = null,
+            $navigation = null,
             winWidth = 0,
             widthFlg = false,
             isTablet = false;
@@ -15,49 +18,103 @@
         function init() {
             $win = $(window);
             winWidth = $win.width();
-            widthFlg = ($win.winWidth > 767) ? false : true;
+            widthFlg = ($win.width() > 767) ? false : true;
             isTablet = (navigator.userAgent.indexOf('iPad') != -1) || (navigator.userAgent.indexOf('Android') != -1) ? true : false;
 
-            $win.on('resize orientationchange', function(){
-              winWidth = $win.width();
-              widthFlg = (winWidth > 767) ? false: true;
-              navCloseHandler();
+            $win.on('resize orientationchange', function(e) {
+                winWidth = $win.width();
+                widthFlg = (winWidth > 767) ? false : true;
+                navCloseHandler();
+                $menuGlobal.find("a").on({
+                    "click": function(event) {
+                        event.preventDefault();
+                        $btnMenu.trigger("click");
+                        location.href = $(this).attr("href");
+                    }
+                });
+                if (!widthFlg) {
+                    rollover();
+                }
             });
 
-            $pushMenu = $('.menu_global .nav');
-            $openMenuSP = $('.menu_sp .icon-bars');
-            $menu = $('.menu_global ul li');
+            $navigation = $('.menu_global .nav');
+            $btnMenu = $('.menu_sp span.icon-bars');
+            $navItem = $navigation.find('> li.dropdown');
+            $menuGlobal = $('.menu_global');
+            $navbarDropdown = $menuGlobal.find('p.navbar');
+
+            if (!widthFlg) {
+                rollover();
+            }
+
             hoverMegamenu();
             pushMenu();
-
+            rollover();
+            navbarDropdown();
         }
-
+        /**
+         * hoverNav
+         * Hover to open/hide Header Nav on PC
+        */
         function hoverMegamenu() {
-            event.preventDefault();
-            $menu.hover(function() {
-                if (!widthFlg && isTablet) {
-                    return false;
-                } else {
-                    $(this).toggleClass('active');
-                    $(this).children('ul').stop().slideToggle(300);
+            $navItem.off().on({
+                'mouseenter': function(e) {
+                    if (!widthFlg && !isTablet) {
+                        $(this).find('a').addClass('active');
+                        $(this).children('ul').stop().slideDown(400);
+                    }
+                },
+
+                'mouseleave': function(e) {
+                    if (!widthFlg && !isTablet) {
+                        $(this).find('a').removeClass('active');
+                        $(this).children('ul').stop().slideUp(400);
+                    }
+                },
+
+                'click': function(e) {
+                    if (!widthFlg && isTablet) {
+                        $(this).find('a').addClass('active');
+                        $(this).children('ul').stop().slideUp(400);
+                    }
                 }
             });
         }
 
-
-
+        /**
+         * navbarDropdown
+         * Click to open/hide dropdown-menu on SP
+         */
+        function navbarDropdown() {
+            $navbarDropdown.off().each(function() {
+                var $tab = $(this);
+                $tab.off().on('click', function() {
+                    if (widthFlg) {
+                        $(this).toggleClass('expand');
+                        if ($(this).hasClass('expand')) {
+                            $(this).next().stop().slideDown('400');
+                        } else {
+                            $(this).next().stop().slideUp('400');
+                        }
+                    }
+                });
+            });
+        }
+         /**
+         * pushMenu
+         * Push Menu right to left
+         */
         function pushMenu() {
-            $openMenuSP.click(function(event) {
-                event.preventDefault();
+            $btnMenu.click(function(e) {
                 if (widthFlg) {
                     var heightNav = $win.height();
-                    if ($pushMenu.hasClass('open')) {
-                        $pushMenu.stop().animate({ 'right': '-100%', width: 0 }, "300");
-                        $pushMenu.removeClass('open');
+                    if ($navigation.hasClass('open')) {
+                        $navigation.stop().animate({ 'right': '-100%', width: 0 }, 400);
+                        $navigation.removeClass('open');
                     } else {
-                        $pushMenu.stop().animate({ 'right': 0, width: '100%' }, "300");
-                        $pushMenu.addClass('open');
-                        $pushMenu.css('height', heightNav - 90);
+                        $navigation.stop().animate({ 'right': 0, width: '100%' }, 400);
+                        $navigation.addClass('open');
+                        $navigation.css('height', heightNav - 90);
                     }
                 } else {
                     return false;
@@ -71,13 +128,25 @@
          */
         function navCloseHandler() {
             if (!widthFlg) {
-                $pushMenu.removeClass('open');
-                $pushMenu.attr('style', '').removeAttr();
-                $menu.removeAttr('style');
+                $navigation.removeClass('open');
+                $navigation.attr('style', '').removeAttr();
+                $navItem.attr('style', '').removeAttr();
             }
         }
 
 
+        function rollover() {
+            $('a').on({
+                'mouseenter': function() {
+                    if ($(this).find("img[src*='_off.']").size() > 0) $(this).find("img:not(.current)").attr("src", $(this).find("img").attr("src").replace("_off.", "_on."));
+                    else if ($(this).find("img:not(.current)").size() > 0) $(this).find("img").css("opacity", "0.5");
+                },
+                'mouseleave': function() {
+                    if ($(this).find("img[src*='_on.']").size() > 0) $(this).find("img:not(.current)").attr("src", $(this).find("img").attr("src").replace("_on.", "_off."));
+                    else if ($(this).find("img:not(.current)").size() > 0) $(this).find("img").css("opacity", "1");
+                }
+            });
+        }
         return {
             init: init
         };
