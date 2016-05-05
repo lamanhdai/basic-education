@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/*----------------------------------------
+    ヘッダー
+----------------------------------------*/
+/*  小見出し
+----------------------------------------*/
+.hidden_scroll {
+  overflow: hidden;
+}
+
+#header {
+  border-bottom: 2px solid #ffd200;
+  height: 90px;
+}
+#header .inner {
+  position: relative;
+  height: inherit;
+}
+#header .menu_global {
+  float: left;
+}
+#header .menu_global .nav {
+  margin-left: 280px;
+}
+#header .menu_global .nav li {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+#header .menu_global .nav li a {
+  display: block;
+  text-decoration: none;
+  font-size: 117%;
+  text-align: center;
+  line-height: 90px;
+  color: #666;
+}
+#header .menu_global .nav li a:hover,
+#header .menu_global .nav li a .active {
+  color: #ffd200;
+}
+#header .menu_global .nav-justified {
+  position: relative;
+}
+#header .menu_global .nav-justified li {
+  display: table-cell;
+  width: 1%;
+}
+#header .menu_global .nav-justified:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+#header .menu_global .dropdown-menu {
+  position: absolute;
+  display: none;
+  background-color: #f1f1f1;
+  width: 680px;
+  right: 0;
+}
+#header .menu_global .dropdown-menu li {
+  display: block;
+  width: 50%;
+  float: left;
+}
+#header .menu_global .dropdown-menu li a {
+  padding: 15px 50px;
+  font-size: 109%;
+  line-height: 1.2em;
+  text-align: left;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+#header .menu_global .dropdown-menu li a:hover {
+  background-color: #ffd200;
+  color: #fff;
+}
+#header .logo {
+  position: absolute;
+  top: 5px;
+}
+#header .logo a {
+  display: block;
+}
+#header .menu_sp {
+  display: none;
+}
+
+#content article {
+  font-size: 117%;
+}
+
+/*----------------------------------------
+    フッター
+----------------------------------------*/
+/*  小見出し
+----------------------------------------*/

@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/*----------------------------------------
+    ヘッダー
+----------------------------------------*/
+/*  小見出し
+----------------------------------------*/
+#header {
+  border-bottom: 2px solid #ffd200;
+  height: auto;
+  background-color: #ffd200;
+}
+#header .inner {
+  position: relative;
+}
+#header .menu_global {
+  float: none;
+  overflow: hidden;
+  width: 0;
+}
+#header .menu_global .nav {
+  margin-left: 0px;
+  position: absolute;
+  background-color: #fff;
+  width: 0;
+  right: -100%;
+  overflow: hidden;
+  z-index: 1000;
+}
+#header .menu_global .nav li {
+  display: block;
+  width: 100%;
+}
+#header .menu_global .nav li a {
+  display: block;
+  text-decoration: none;
+  font-size: 100%;
+  text-align: left;
+  line-height: 0px;
+  padding: 20px 15px;
+  color: #666;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+}
+#header .menu_global .open {
+  right: -100%;
+  width: 0;
+  overflow: hidden;
+}
+#header .menu_global .dropdown-menu {
+  position: relative;
+  display: none;
+  background-color: #f1f1f1;
+  width: 100%;
+  right: 0;
+}
+#header .menu_global .dropdown-menu li {
+  display: block;
+  width: 100%;
+  float: left;
+}
+#header .menu_global .dropdown-menu li a {
+  padding: 10px 15px;
+  font-size: 80%;
+  line-height: 1.2em;
+  text-align: left;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+#header .menu_global .dropdown-menu li a:hover {
+  background-color: #ffd200;
+}
+#header .logo {
+  position: relative;
+  padding: 10px 0px;
+}
+#header .logo img {
+  width: 70%;
+  height: auto;
+}
+#header .logo a {
+  display: inline-block;
+}
+#header .menu_sp {
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+}
+
+#content {
+  padding: 20px 0px;
+}
+#content article {
+  font-size: 100%;
+  text-align: justify;
+}
+
+/*----------------------------------------
+    フッター
+----------------------------------------*/
+/*  小見出し
+----------------------------------------*/

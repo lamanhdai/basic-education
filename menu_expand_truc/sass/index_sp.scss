@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/*----------------------------------------
+    ヘッダー
+----------------------------------------*/
+
+
+/*  小見出し
+----------------------------------------*/
+
+#header {
+    border-bottom: 2px solid #ffd200;
+    height: auto;
+    background-color: #ffd200;
+    .inner {
+        position: relative;
+    }
+    .menu_global {
+        float: none;
+        overflow: hidden;
+        width: 0;
+        .nav {
+            margin-left: 0px;
+            position: absolute;
+            background-color: #fff;
+            width: 0;
+            right: -100%;
+            overflow: hidden;
+            z-index: 1000;
+            li {
+                display: block;
+                width: 100%;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-size: 100%;
+                    text-align: left;
+                    line-height: 0px;
+                    padding: 20px 15px;
+                    color: #666;
+                    border-bottom: 1px solid rgba(1,1,1, .2);
+                }
+            }
+        }
+
+        .open {
+            right: -100%;
+            width: 0;
+            overflow: hidden;
+        }
+        .dropdown-menu {
+            position: relative;
+            display: none;
+            background-color: #f1f1f1;
+            width: 100%;
+            right: 0;
+            li {
+                display: block;
+                width: 100%;
+                float: left;
+                a {
+                    padding: 10px 15px;
+                    font-size: 80%;
+                    line-height: 1.2em;
+                    text-align: left;
+                    -webkit-transition: all .25s ease-in-out;
+                    -moz-transition: all .25s ease-in-out;
+                    -ms-transition: all .25s ease-in-out;
+                    -o-transition: all .25s ease-in-out;
+                    transition: all .25s ease-in-out;
+                    &:hover {
+                        background-color: #ffd200;
+                    }
+                }
+            }
+        }
+    }
+    .logo {
+        position: relative;
+        padding: 10px 0px;
+        img {
+            width: 70%;
+            height: auto;
+        }
+        a {
+            display: inline-block;
+        }
+    }
+    .menu_sp {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 15px;
+    }
+}
+
+#content {
+    padding: 20px 0px;
+    article {
+        font-size: 100%;
+        text-align: justify;
+    }
+}
+
+
+/*----------------------------------------
+    フッター
+----------------------------------------*/
+
+
+/*  小見出し
+----------------------------------------*/
