@@ -1,0 +1,28 @@
+@charset "utf-8";
+body {
+  font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ ProN W3","ＭＳ Ｐゴシック", "MS-PGothic", "Droid Sans", sans-serif;
+  font-size: 76%;
+  width: 100%;
+  min-width: 100%;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.inner {
+  width: 100%;
+}
+.map_store .wrap_img_pc {
+  display: none;
+}
+.map_store .wrap_img {
+  display: block;
+  margin: 0 auto;
+  width: 78.125%;
+}
+.map_store .wrap_img img {
+  display: block;
+}
