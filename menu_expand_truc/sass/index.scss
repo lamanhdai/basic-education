@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/*----------------------------------------
+    ヘッダー
+----------------------------------------*/
+
+
+/*  小見出し
+----------------------------------------*/
+.hidden_scroll{
+    overflow:hidden;
+}
+#header {
+    border-bottom: 2px solid #ffd200;
+    height: 90px;
+    .inner {
+        position: relative;
+        height: inherit;
+    }
+    .menu_global {
+        float: left;
+        .nav {
+            margin-left: 280px;
+            li {
+                padding-left: 0;
+                margin-bottom: 0;
+                list-style: none;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-size: 117%;
+                    text-align: center;
+                    line-height: 90px;
+                    color: #666;
+                    &:hover,
+                    .active {
+                        color: #ffd200;
+                    }
+                }
+                // &:after {
+                //     content: '';
+                //     display: inline-block;
+                //     width: 100%;
+                // }
+            }
+        }
+        .nav-justified {
+            position: relative;
+            li {
+                display: table-cell;
+                width: 1%;
+            }
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 100%;
+            }
+        }
+        .dropdown-menu {
+            position: absolute;
+            display: none;
+            background-color: #f1f1f1;
+            width: 680px;
+            right: 0;
+            li {
+                display: block;
+                width: 50%;
+                float: left;
+                a {
+                    padding: 15px 50px;
+                    font-size: 109%;
+                    line-height: 1.2em;
+                    text-align: left;
+                    -webkit-transition: all .25s ease-in-out;
+                    -moz-transition: all .25s ease-in-out;
+                    -ms-transition: all .25s ease-in-out;
+                    -o-transition: all .25s ease-in-out;
+                    transition: all .25s ease-in-out;
+                    &:hover {
+                        background-color: #ffd200;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .logo {
+        position: absolute;
+        top: 5px;
+        a {
+            display: block;
+        }
+    }
+    .menu_sp {
+        display: none;
+    }
+}
+
+#content {
+    article {
+        font-size: 117%;
+    }
+}
+
+
+/*----------------------------------------
+    フッター
+----------------------------------------*/
+
+
+/*  小見出し
+----------------------------------------*/
