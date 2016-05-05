@@ -37,7 +37,8 @@
 }
 #header .menu_global .nav li a:hover,
 #header .menu_global .nav li a .active {
-  color: #ffd200;
+  background: #0bb2ef;
+  color: #fff;
 }
 #header .menu_global .nav-justified {
   position: relative;
