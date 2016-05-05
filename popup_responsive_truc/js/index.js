@@ -50,8 +50,6 @@
         }
 
 
-
-
         /**
          * navCloseHandler
          * Reset Open/Close Modal
