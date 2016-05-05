@@ -8,13 +8,15 @@
             $openMenuSP = null,
             $pushMenu = null,
             winWidth = 0,
-            widthFlg = false;
+            widthFlg = false,
+            isTablet = false;
 
 
         function init() {
             $win = $(window);
             winWidth = $win.width();
             widthFlg = ($win.winWidth > 767) ? false : true;
+            isTablet = (navigator.userAgent.indexOf('iPad') != -1) || (navigator.userAgent.indexOf('Android') != -1) ? true : false;
 
             $win.on('resize orientationchange', function(){
               winWidth = $win.width();
@@ -33,11 +35,11 @@
         function hoverMegamenu() {
             event.preventDefault();
             $menu.hover(function() {
-                if (widthFlg) {
+                if (!widthFlg && isTablet) {
+                    return false;
+                } else {
                     $(this).toggleClass('active');
                     $(this).children('ul').stop().slideToggle(300);
-                } else {
-                    return false;
                 }
             });
         }

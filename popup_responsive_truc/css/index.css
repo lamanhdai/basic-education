@@ -1,0 +1,48 @@
+
+.wrapper{
+  margin: 0 auto;
+  text-align:center;
+}
+#popup{
+  background-color: #00A1E9;
+  width: 500px;
+  padding: 30px;
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  z-index: 9999;
+}
+@media screen and (max-width: 767px){
+  #popup{
+     width: 95%;
+  }
+}
+.open{
+  display: block;
+}
+
+.overlay{
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+
+}
+
+
+#popup .popup_section .btn_close{
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  cursor: pointer;
+}
+
+#popup .popup_section .content_popup{
+  background-color:#fff;
+}
