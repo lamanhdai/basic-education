@@ -92,6 +92,15 @@
         top: 25px;
         right: 15px;
         cursor: pointer;
+        .icon-bars{
+            background-image: url(../img/icon-menu.png);
+            width: 24px;
+            height: 24px;
+            display:block;
+            &.show{
+                background-image: url(../img/icon-menu_close.png);
+            }
+        }
     }
 }
 

@@ -86,6 +86,9 @@
 #header .menu_sp {
   display: none;
 }
+#header .menu_sp .icon-bars {
+  display: none;
+}
 
 #content article {
   font-size: 117%;

@@ -1,4 +1,5 @@
-;(function($, win) {
+;
+(function($, win) {
     'use strict';
 
     var Menu = $.Menu = (function(e) {
@@ -21,24 +22,25 @@
             widthFlg = ($win.width() > 767) ? false : true;
             isTablet = (navigator.userAgent.indexOf('iPad') != -1) || (navigator.userAgent.indexOf('Android') != -1) ? true : false;
 
-            $win.on('resize orientationchange', function(e) {
+            $win.on('resize orientationchange', function() {
                 winWidth = $win.width();
                 widthFlg = (winWidth > 767) ? false : true;
                 navCloseHandler();
-                $menuGlobal.find("a").on({
-                    "click": function(event) {
-                        event.preventDefault();
-                        $btnMenu.trigger("click");
-                        location.href = $(this).attr("href");
-                    }
-                });
+
+                // $menuGlobal.find("a").on({
+                //     "click": function(e) {
+                //         event.preventDefault();
+                //         $btnMenu.trigger("click");
+                //         location.href = $(this).attr("href");
+                //     }
+                // });
                 if (!widthFlg) {
                     rollover();
                 }
             });
 
             $navigation = $('.menu_global .nav');
-            $btnMenu = $('.menu_sp span.icon-bars');
+            $btnMenu = $('.menu_sp .icon-bars');
             $navItem = $navigation.find('> li.dropdown');
             $menuGlobal = $('.menu_global');
             $navbarDropdown = $menuGlobal.find('p.navbar');
@@ -55,27 +57,27 @@
         /**
          * hoverNav
          * Hover to open/hide Header Nav on PC
-        */
+         */
         function hoverMegamenu() {
             $navItem.off().on({
                 'mouseenter': function(e) {
                     if (!widthFlg && !isTablet) {
                         $(this).find('a').addClass('active');
-                        $(this).children('ul').stop().slideDown(400);
+                        $(this).children('ul').stop().slideDown(300);
                     }
                 },
 
                 'mouseleave': function(e) {
                     if (!widthFlg && !isTablet) {
                         $(this).find('a').removeClass('active');
-                        $(this).children('ul').stop().slideUp(400);
+                        $(this).children('ul').stop().hide('fast');
                     }
                 },
 
                 'click': function(e) {
                     if (!widthFlg && isTablet) {
                         $(this).find('a').addClass('active');
-                        $(this).children('ul').stop().slideUp(400);
+                        $(this).children('ul').stop().hide('fast');
                     }
                 }
             });
@@ -92,32 +94,30 @@
                     if (widthFlg) {
                         $(this).toggleClass('expand');
                         if ($(this).hasClass('expand')) {
-                            $(this).next().stop().slideDown('400');
+                            $(this).next().stop().slideDown('300');
                         } else {
-                            $(this).next().stop().slideUp('400');
+                            $(this).next().stop().slideUp('fast');
                         }
                     }
                 });
             });
         }
-         /**
+        /**
          * pushMenu
          * Push Menu right to left
          */
         function pushMenu() {
             $btnMenu.click(function(e) {
-                if (widthFlg) {
-                    var heightNav = $win.height();
-                    if ($navigation.hasClass('open')) {
-                        $navigation.stop().animate({ 'right': '-100%', width: 0 }, 400);
-                        $navigation.removeClass('open');
-                    } else {
-                        $navigation.stop().animate({ 'right': 0, width: '100%' }, 400);
-                        $navigation.addClass('open');
-                        $navigation.css('height', heightNav - 90);
-                    }
+                var $btn = $(this);
+                var heightNav = $win.height();
+                $btn.toggleClass('show');
+                if ($btn.hasClass('show')) {
+                    $navigation.stop().animate({ 'right': 0, width: '100%' }, 300);
+                    $navigation.addClass('open');
+                    $navigation.css('height', heightNav);
                 } else {
-                    return false;
+                    $navigation.stop().animate({ 'right': '-100%', width: 0 }, 'fast');
+                    $navigation.removeClass('open');
                 }
             });
         }
