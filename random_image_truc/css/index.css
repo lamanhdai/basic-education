@@ -1,0 +1,14 @@
+h1.title{
+  text-align: center;
+}
+.list_item{
+  list-style: none;
+  width: 100%;
+}
+.list_item li{
+  float: left;
+  display: none;
+}
+.list_item li.active{
+  display: block;
+}
