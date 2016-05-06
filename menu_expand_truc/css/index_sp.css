@@ -5,7 +5,7 @@
 /*  小見出し
 ----------------------------------------*/
 #header {
-  border-bottom: 2px solid #ffd200;
+  border-bottom: 0;
   height: auto;
   background-color: #ffd200;
 }
@@ -29,6 +29,10 @@
 #header .menu_global .nav li {
   display: block;
   width: 100%;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.1);
+}
+#header .menu_global .nav li:last-child {
+  border-bottom: none;
 }
 #header .menu_global .nav li a {
   display: block;
@@ -38,7 +42,10 @@
   line-height: 0px;
   padding: 20px 15px;
   color: #666;
-  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+}
+#header .menu_global .nav li a:hover, #header .menu_global .nav li a.active {
+  background-color: #93CCEA;
+  color: #666;
 }
 #header .menu_global .open {
   right: -100%;
@@ -48,7 +55,7 @@
 #header .menu_global .dropdown-menu {
   position: relative;
   display: none;
-  background-color: #f1f1f1;
+  background-color: #fff;
   width: 100%;
   right: 0;
 }
@@ -60,13 +67,18 @@
 #header .menu_global .dropdown-menu li a {
   padding: 10px 15px;
   font-size: 80%;
+  padding-left: 30px;
   line-height: 1.2em;
   text-align: left;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
 }
 #header .menu_global .dropdown-menu li a:hover {
-  background-color: #ffd200;
+  background-color: transparent;
+  color: #111;
+}
+#header .menu_global .dropdown-menu li a:before {
+  content: "+";
 }
 #header .logo {
   position: relative;

@@ -35,9 +35,8 @@
   line-height: 90px;
   color: #666;
 }
-#header .menu_global .nav li a:hover,
-#header .menu_global .nav li a .active {
-  background: #0bb2ef;
+#header .menu_global .nav li a:hover, #header .menu_global .nav li a.active {
+  background-color: #93CCEA;
   color: #fff;
 }
 #header .menu_global .nav-justified {
@@ -55,7 +54,7 @@
 #header .menu_global .dropdown-menu {
   position: absolute;
   display: none;
-  background-color: #f1f1f1;
+  background-color: #93CCEA;
   width: 680px;
   right: 0;
 }
