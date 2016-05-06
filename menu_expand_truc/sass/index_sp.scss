@@ -9,7 +9,7 @@
 ----------------------------------------*/
 
 #header {
-    border-bottom: 2px solid #ffd200;
+    border-bottom: 0;
     height: auto;
     background-color: #ffd200;
     .inner {
@@ -30,6 +30,10 @@
             li {
                 display: block;
                 width: 100%;
+                border-bottom: 1px solid rgba(1, 1, 1, .1);
+                &:last-child {
+                    border-bottom: none;
+                }
                 a {
                     display: block;
                     text-decoration: none;
@@ -38,11 +42,14 @@
                     line-height: 0px;
                     padding: 20px 15px;
                     color: #666;
-                    border-bottom: 1px solid rgba(1,1,1, .2);
+                    &:hover,
+                    &.active {
+                        background-color: #93CCEA;
+                        color: #666;
+                    }
                 }
             }
         }
-
         .open {
             right: -100%;
             width: 0;
@@ -51,7 +58,7 @@
         .dropdown-menu {
             position: relative;
             display: none;
-            background-color: #f1f1f1;
+            background-color: #fff;
             width: 100%;
             right: 0;
             li {
@@ -61,6 +68,7 @@
                 a {
                     padding: 10px 15px;
                     font-size: 80%;
+                    padding-left: 30px;
                     line-height: 1.2em;
                     text-align: left;
                     -webkit-transition: all .25s ease-in-out;
@@ -69,7 +77,11 @@
                     -o-transition: all .25s ease-in-out;
                     transition: all .25s ease-in-out;
                     &:hover {
-                        background-color: #ffd200;
+                        background-color: transparent;
+                        color: #111
+                    }
+                    &:before {
+                        content: "+";
                     }
                 }
             }
@@ -92,12 +104,12 @@
         top: 25px;
         right: 15px;
         cursor: pointer;
-        .icon-bars{
+        .icon-bars {
             background-image: url(../img/icon-menu.png);
             width: 24px;
             height: 24px;
-            display:block;
-            &.show{
+            display: block;
+            &.show {
                 background-image: url(../img/icon-menu_close.png);
             }
         }
