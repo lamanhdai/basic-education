@@ -1,0 +1,79 @@
+
+h1.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.header{
+  height: 300px;
+  border:1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.box-img {
+    width: 100%;
+    position: relative;
+    min-width: 980px;
+    height: 500px;
+    /* overflow: hidden;
+ */}
+
+.box-img .box-bg {
+    position: absolute;
+    height: inherit;
+    width: 50%;
+    opacity: 0;
+}
+
+
+.box-img .box-left_1 {
+    background: url(../img/img-comfortable_rich.jpg) no-repeat center center;
+    left: 0;
+    top: 0;
+    margin-left: 3%;
+}
+
+.box-img .box-right_2 {
+    background: url(../img/img-house_make_style.jpg) no-repeat center center;
+    right: 0;
+    top: 0;
+    margin-right: 3%;
+}
+
+
+.box-img .box-content{
+    height: 500px;
+    width: 50%;
+
+}
+
+.box-img .box-right_1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.box-img .box-left_2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.box-img .box-content .content{
+    position: absolute;
+    top: 47%;
+    opacity: 0;
+    margin: 0 auto;
+    text-align: center;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.box-img .box-bg {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
