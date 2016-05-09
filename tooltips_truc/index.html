@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tool Tips</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/qtip.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.2/jquery.qtip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.0/imagesloaded.pkgd.min.js"></script>
+    <script src="js/loadJson.js"></script>
+    <script src='js/index.js'></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1 class="title">Tool Tips</h1>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="tool_tips">
+                        <ul>
+                            <li><a href="#text" title="Simple Text" data-tooltip="Hello Work">Simple text</a></li>
+                            <li>
+                                <a class="image" href="#imgage"><img src="img/logo-chaocom.png" alt="img/logo-vsip.jpg" width="168" height="82"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </div>
+    <script>
+    $(document).ready(function() {
+        $('.image').qtip({
+            content: {
+                text: function(event, api) {
+                    $.ajax({
+                            url: 'json/data.json', // URL to the JSON file
+                            type: 'GET', // POST or GET
+                            dataType: 'json', // Tell it we're retrieving JSON
+                            data: {
+                                id: $(this).attr('id') // Pass through the ID of the current element matched by '.selector'
+                            },
+                        })
+                        .then(function(data) {
+                            /* Process the retrieved JSON object
+                             *    Retrieve a specific attribute from our parsed
+                             *    JSON string and set the tooltip content.
+                             */
+                            var content = '<image src="'+data.image.src+'" alt="'+data.image.alt+'" width="'+data.image.width+'" height="'+data.image.height+'" />';
+
+                            // Now we set the content manually (required!)
+                            api.set('content.text', content);
+                        }, function(xhr, status, error) {
+                            // Upon failure... set the tooltip content to the status and error value
+                            api.set('content.text', status + ': ' + error);
+                        });
+
+
+                    return 'Loading...'; // Set some initial loading text
+                }
+            },
+            position: {
+                viewport: $(window)
+            },
+            style: 'qtip-wiki'
+        });
+
+        $('a[title]').qtip();
+    });
+    </script>
+</body>
+
+</html>

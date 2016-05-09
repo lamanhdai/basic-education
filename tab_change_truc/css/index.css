@@ -1,0 +1,63 @@
+
+body{
+   overflow:hidden;
+}
+h1.title{
+  text-align: center;
+}
+.list_item{
+  list-style: none;
+  width: 100%;
+}
+.list_item li{
+  float: left;
+  display: none;
+}
+.list_item li.active{
+  display: block;
+}
+
+
+.nav-tabs>li>a.is-active,.nav-tabs>li>a:hover{
+  background-color: red;
+  border-radius: 0;
+  color: #fff;
+}
+
+/**
+ * Tab
+ */
+#tabs{
+  /* position: relative; */
+
+}
+
+.tab-pane {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  left: 100%;
+  overflow:hidden;
+}
+
+
+
+.tab-pane.is-active {
+  display: block;
+  position: relative;
+  left: 0%;
+}
+
+
+
+/**
+ * Tabs no-js fallback
+ */
+.c-tabs.no-js .c-tabs-nav {
+  display: none;
+}
+
+.c-tabs.no-js .c-tab {
+  display: block;
+  margin-bottom: 1.5rem;
+}

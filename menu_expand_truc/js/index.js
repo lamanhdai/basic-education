@@ -112,11 +112,11 @@
                 var heightNav = $win.height();
                 $btn.toggleClass('show');
                 if ($btn.hasClass('show')) {
-                    $navigation.stop().animate({ 'right': 0, width: '100%' }, 300);
+                    $navigation.stop().animate({ 'right': 0, width: '100%', easing: "easeOutBounce" });
                     $navigation.addClass('open');
                     $navigation.css('height', heightNav);
                 } else {
-                    $navigation.stop().animate({ 'right': '-100%', width: 0 }, 'fast');
+                    $navigation.stop().animate({ 'right': '-100%', width: 0, easing: "easeOutBounce" });
                     $navigation.removeClass('open');
                 }
             });
