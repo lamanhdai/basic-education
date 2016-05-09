@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*----------------------------------------
+    大見出し
+----------------------------------------*/
+
+/*  小見出し
+----------------------------------------*/
+
+.inner {
+  width: 1000px;
+  margin: 50px auto 0;
+}
+#wrapper {
+  width: 100%;
+}
+#wrapper img {
+  width: 100%;
+  height: auto;
+}
+.item {
+  padding: 10px;
+}
+.masonry_box {
+  padding: 10px 1%;
+  margin: 20px 0;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.masonry_box .title_main {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 6rem;
+  color: #D26;
+}
+.masonry_box .txt {
+  font-size: 2rem;
+  margin: 0 0 10px;
+}
