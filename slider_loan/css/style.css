@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/*---------------------------------------
+  リセットCSS（編集不要）
+----------------------------------------*/
+html{overflow-y:scroll;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}table{border-collapse:collapse;border-spacing:0;}caption,th{text-align:left;}q:before,q:after{content:'';}object,embed{vertical-align:top;}hr,legend{display:none;}h1,h2,h3,h4,h5,h6{font-size:100%;}img,abbr,acronym,fieldset{border:0;}ul li{list-style-type:none;}a,label{cursor:pointer;}img{vertical-align:bottom;margin:0;padding:0;}
+
+body {
+  font-size: 76%;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #111111;
+  min-width: 1000px;
+}
+a:focus {
+  outline: none;
+}
+
+.inner {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0.1px;
+  font-size: 0.1em;
+  line-height: 0;
+  clear: both;
+}
+
+#content {
+  margin: 0 auto;
+}
+
+/*----------------------------------------
+  ヘッダー
+----------------------------------------*/
+/*  #header
+----------------------------------------*/
+#header {
+  background: #222222;
+  height: 60px;
+}
+
+#header .inner {
+  width: 960px;
+  overflow: hidden;
+}
+
+#local_logo {
+  display: table;
+  width: 50px;
+  float: left;
+  height: 60px;
+}
+
+#local_logo a {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#local_nav {
+  float: right;
+  width: 840px;
+  position: relative;
+}
+
+#local_nav ul {
+  overflow: hidden;
+}
+
+#local_nav li {
+  float: left;
+  text-align: left;
+  height: 60px;
+  padding-left: 65px;
+}
+#local_nav li:first-child {
+  padding-left: 0;
+}
+#local_nav li.location {
+  padding-left: 70px;
+}
+#local_nav li.contact {
+  width: 170px;
+  position: absolute;
+  right: 0;
+  background: #fff634;
+  text-align: center;
+  padding-left: 0;
+}
+
+#local_nav li a {
+  color: #777777;
+  font-size: 125%;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+#local_nav li.active a,
+#local_nav li a:hover {
+  color: #fefefe;
+  border-bottom: 2px solid #fefefe;
+}
+#local_nav li.contact a,
+#local_nav li.contact a:hover {
+  border: 0;
+  display: block;
+}
+#local_nav li.contact span {
+  display: inline-block;
+  color: #222222;
+  padding-left: 37px;
+  background: url(../img/share/ico-mail.png) no-repeat left top;
+  line-height: 1.5;
+}
+
+#header .menu {
+  display: none;
+}
+
+/*  #footer
+----------------------------------------*/
+#footer {
+  background: #222;
+  padding: 8px 0 9px;
+  position: relative;
+}
+
+#footer #pagetop {
+  position: absolute;
+  right: 56px;
+  bottom: 55px;
+  width: 56px;
+  height: 56px;
+}
+
+#footer .inner {
+  width: 1000px;
+  overflow: hidden;
+}
+
+#footer .policy {
+  float: left;
+}
+
+#footer .policy ul {
+  overflow: hidden;
+}
+
+#footer .policy li {
+  float: left;
+  margin-left: 20px;
+  padding-left: 10px;
+  background: url(../img/share/ico-footer_arrow.png) no-repeat left center;
+}
+
+#footer .policy a {
+  font-size: 84%;
+  color: #ccc;
+  text-decoration: none;
+}
+
+#footer .bottom_info {
+  margin-right: 10px;
+  float: right;
+}
+
+#footer .bottom_info address {
+  float: left;
+  color: #cccccc;
+  font-size: 84%;
+  margin-top: 2px;
+}
+
+#footer .bottom_info .bottom_logo {
+  float: left;
+  margin-left: 19px;
+}
+
+#footer #pagetop a {
+  display: block;
+}
