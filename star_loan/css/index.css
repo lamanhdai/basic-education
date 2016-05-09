@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/*----------------------------------------
+    大見出し
+----------------------------------------*/
+
+/*  小見出し
+----------------------------------------*/
+.clearfix:after {
+  content:".";display:block;visibility:hidden;height:0.1px;font-size:0.1em;line-height:0;clear:both;
+}
+.inner {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#banner {
+  width: 100%;
+  position: relative;
+  height: 212px;
+  background: url(../img/bnr-top.jpg) no-repeat center center;
+}
+#banner .star {
+  position: relative;
+  margin-left: 80px;
+}
+#banner .box_star {
+  width: 57px;
+  position: relative;
+}
+#banner .box_left {
+  top: 43px;
+  left : 0px;
+  position: absolute;
+}
+#banner .box_right {
+  top: 30px;
+  right : -50px;
+  position: absolute;
+}
+#banner .box_star .star02 {
+  position: absolute;
+  top: 70%;
+  left: -15px;
+}
+#banner .box_star .star03 {
+  position: absolute;
+  top: 100%;
+  left: 18px;
+}
+#banner .box_star .star05 {
+  position: absolute;
+  top: 32%;
+  right: -12px;
+}
+#banner .box_star .star06 {
+  position: absolute;
+  top: 100%;
+  left: 18px;
+}
+
+
+.shine_img img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: -350px;
+}

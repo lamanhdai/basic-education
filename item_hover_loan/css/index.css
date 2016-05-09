@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*----------------------------------------
+    大見出し
+----------------------------------------*/
+
+/*  小見出し
+----------------------------------------*/
+
+.inner {
+  width: 760px;
+  margin: 50px auto 0;
+}
+.item ul {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+.btn_item li {
+  float: left;
+  margin: 30px 40px 0;
+}
+.btn_item li span {
+  cursor: pointer;
+}
+.main_visual li {
+  position: absolute;
+}
+.current {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+}
+.main_visual li {
+  display: none;
+}
+.main_visual li.show {
+  display: block;
+}

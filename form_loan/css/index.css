@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+/*----------------------------------------
+    大見出し
+----------------------------------------*/
+
+/*  小見出し
+----------------------------------------*/
+.clearfix:after {
+  content:".";display:block;visibility:hidden;height:0.1px;font-size:0.1em;line-height:0;clear:both;
+}
+.inner {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*----------------------------------------
+    contact_us
+----------------------------------------*/
+
+#contact_us {
+  min-height: 533px;
+  padding: 50px 0;
+  background: url(../img/bg-contact.jpg) no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#contact_us .content {
+  background: url(../img/bg-wrap_contact.png) repeat 0 0;
+  -webkit-box-shadow: -5px 5px 10px 0px rgba(220, 220, 220, 1);
+  -moz-box-shadow: -5px 5px 10px 0px rgba(220, 220, 220, 1);
+  box-shadow: -5px 5px 10px 0px rgba(220, 220, 220, 1);
+  position: relative;
+}
+
+#contact_us .content h2 {
+  font-family: "Avenir Medium";
+  font-style: normal;
+  font-size: 420%;
+  color: #ff0000;
+  text-transform: uppercase;
+  padding: 35px 0 0 40px;
+}
+
+:lang(ja) #contact_us .content h2 {
+  font-family: "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","Osaka","メイリオ","Meiryo","ＭＳ Ｐゴシック","verdana",sans-serif;
+  font-size: 380%;
+}
+
+#contact_us .wrap {
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+#contact_us .info {
+  float: left;
+  width: 450px;
+}
+
+#contact_us .info .intro {
+  border-left: 2px solid #cccccc;
+  padding-left: 5px;
+  margin: 3px 25px 21px 0;
+  font-size: 117%;
+  line-height: 1.5;
+}
+
+:lang(ja) #contact_us .info .intro {
+  font-size: 109%;
+}
+
+#contact_us .info li {
+  font-size: 125%;
+  background-repeat: no-repeat; 
+  background-position: left center;
+  padding: 13px 0 10px 58px;
+  line-height: 1.2em;
+}
+
+:lang(ja) #contact_us .info li {
+  font-size: 109%;
+}
+
+#contact_us .info li:nth-child(1) {
+  background-image: url(../img/ico-address.png);
+}
+
+#contact_us .info li:nth-child(2) {
+  background-image: url(../img/ico-phone.png);
+}
+
+#contact_us .info li:nth-child(3) {
+  background-image: url(../img/ico-email.png);
+  padding: 23px 0 17px 58px;
+}
+
+#contact_us .form {
+  float: right;
+  width: 420px;
+}
+
+#contact_us .form .note {
+  color: #e80000;
+  font-size: 150%;
+  font-weight: bold;
+  font-family: "Avenir Medium";
+  margin-bottom: 5px;
+}
+
+#contact_us .form table {
+  font-size: 117%;
+  width: 100%;
+}
+
+:lang(ja) #contact_us .form table {
+  font-size: 109%;
+}
+
+#contact_us .form th {
+  width: 120px;
+  padding: 8px 0;
+  vertical-align: top;
+  font-weight: normal;
+}
+
+#contact_us .form td { 
+  padding: 8px 5px 8px 0;
+  vertical-align: top;
+  position: relative;
+}
+
+#contact_us .form .required_block {
+  position: relative;
+}
+
+#contact_us .form .required_block:after {
+  content: '*';
+  font-size: 117%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #e80000;
+}
+
+#contact_us .form .message {
+  vertical-align: top;
+}
+
+#contact_us .form .button {
+  text-align: center;
+}
+
+#contact_us .form input[type="text"] {
+  width: 93%;
+  margin-left: 10px;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #cccccc;
+  border-left: none;
+  background: none;
+}
+
+#contact_us .form textarea {
+  width: 93%;
+  height: 122px;
+  padding-top: 8px;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #cccccc;
+  border-left: none;
+  overflow: auto;
+  outline: none;
+  background: none;
+  resize: none;
+  margin-left: 13px;
+}
+
+#contact_us .form input[type="submit"] {
+  border: 1px solid #525252;
+  font-family: "Avenir Medium";
+  font-size: 109%;
+  padding: 2px 23px;
+  background: #ffffff;
+  cursor: pointer;
+  margin: 5px 0 20px;
+}
+
+:lang(ja) #contact_us .form input[type="submit"] {
+  font-family: "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","Osaka","メイリオ","Meiryo","ＭＳ Ｐゴシック","verdana",sans-serif;
+}
+
+#contact_us .content .line {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#contact_us .form .error {
+  color: #f50202;
+  font-size: 92%;
+  font-family: "Avenir Medium";
+  margin-left: 15px;
+}
+
+#contact_us .form .error {
+  font-family: "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","Osaka","メイリオ","Meiryo","ＭＳ Ｐゴシック","verdana",sans-serif;
+}
+
+#contact_us .thanks {
+  margin: 140px 0;
+}
+
+#contact_us .thanks p {
+  font-size: 117%;
+  text-align: center;
+  font-weight: bold;
+  color: #696969;
+}
+
+#contact_us .loading {
+  text-align: center;
+  margin: 140px 0 125px;
+}

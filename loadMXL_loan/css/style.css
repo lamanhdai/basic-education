@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.location_content .map_location {
+  float: left;
+}
+.location_content .map_max {
+  float: right;
+  overflow: hidden;
+  width: 400px;
+  height: 600px;
+}
