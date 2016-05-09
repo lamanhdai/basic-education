@@ -1,0 +1,28 @@
+
+body{
+   overflow:hidden;
+}
+h1.title{
+  text-align: center;
+}
+.list_item{
+  list-style: none;
+  width: 100%;
+}
+.list_item li{
+  float: left;
+  display: none;
+}
+.list_item li.active{
+  display: block;
+}
+
+
+.qtip{
+  border-color: rgba(0, 190, 0, 0.6);
+  background-color: #ddd;
+}
+
+.qtip .qtip-content{
+    font-size: 12px;
+}
