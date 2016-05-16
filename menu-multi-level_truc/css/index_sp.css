@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/*----------------------------------------
+    Header
+----------------------------------------*/
+.push_right{
+  right: 85%;
+  overflow-x: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+#header {
+    height: 60px;
+    position: relative;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#header p {
+    margin-bottom: 0px;
+}
+
+#header h1 {
+    float: left;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+#header .pull-right {
+    margin-top: 18px;
+}
+
+#header .btn-menu {
+    cursor: pointer;
+}
+
+#header .lang select {
+    border-radius: 0;
+    border-color: transparent;
+}
+
+#header .search,
+#header .lang,
+#header .btn-menu {
+    float: right;
+    margin-right: 8px;
+}
+
+
+/*----------------------------------------
+    Menu SP
+----------------------------------------*/
+
+.menu_sp {
+    position: fixed;
+    background: #f1f1f1;
+    top: 0;
+    right: -100%;
+    display: block;
+    height: auto;
+    line-height: 1.2;
+    width: 90%;
+    height: 100%;
+    float:none;
+}
+
+.menu_sp.show {
+    margin-left: 0;
+}
+.menu_sp:after{
+  display:block;
+  content:"";
+  clear:both;
+}
+
+.menu_sp .global_nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu_sp .global_nav .nav_bar {
+    height: auto;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.menu_sp .global_nav .nav_bar .dropdown_menu {
+    padding-left: 15px;
+}
+
+.menu_sp .global_nav .nav_bar > li {
+    float: none;
+}
+
+.menu_sp .global_nav .nav_bar li a {
+    padding: 6px 15px;
+    line-height: 1.5;
+    display: block;
+}
+
+.menu_sp .global_nav .nav_bar li a.active {
+    color: orange;
+}
+
+.menu_sp .global_nav .nav_bar li i.material-icons {
+    vertical-align: middle!important;
+    float: right;
+}
+
+.menu_sp .global_nav .nav_bar li > ul {
+    text-align: left;
+    display: none;
+    background: #f1f1f1;
+    position: relative;
+    width: 100%;
+}
+
+.menu_sp .global_nav .nav_bar li > ul > li > ul{
+    text-align: left;
+    position: relative;
+    left: 0;
+}
+
+
+.menu_sp .global_nav .nav_bar .dropdown_menu.open {
+    display: block;
+}
+
+
+
+
+
