@@ -4,7 +4,7 @@
     Header
 ----------------------------------------*/
 .push_right{
-  right: 85%;
+  right: 100%;
   overflow-x: hidden;
   position: fixed;
   width: 100%;
@@ -55,17 +55,33 @@
     position: fixed;
     background: #f1f1f1;
     top: 0;
-    right: -100%;
+    margin-left: 100%;
     display: block;
     height: auto;
     line-height: 1.2;
-    width: 90%;
-    height: 100%;
+    width: 100%;
     float:none;
+    top: 60px;
+}
+.menu_sp .global_nav .nav_bar li .btn-close {
+  text-align:center;
+  display: block;
+  font-size: 1.2em;
+  padding: 6px 12px;
+  vertical-align: middle;
+  background: #1B6FB1;
+  color: #fff;
+  cursor:pointer;
+}
+.menu_sp .global_nav .nav_bar li .btn-close i.material-icons{
+  float:none;
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom: 3px;
 }
 
 .menu_sp.show {
-    margin-left: 0;
+   border-top:1px solid #1B6FB1;
 }
 .menu_sp:after{
   display:block;
@@ -77,16 +93,19 @@
     list-style: none;
     padding: 0;
 }
-
+.menu_sp .global_nav ul li a {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    font-size: 1.4em;
+    text-decoration:none;
+    color:#1B6FB1;
+}
 .menu_sp .global_nav .nav_bar {
     height: auto;
     margin-bottom: 0px;
     margin-left: 0px;
 }
 
-.menu_sp .global_nav .nav_bar .dropdown_menu {
-    padding-left: 15px;
-}
+
 
 .menu_sp .global_nav .nav_bar > li {
     float: none;
@@ -96,15 +115,18 @@
     padding: 6px 15px;
     line-height: 1.5;
     display: block;
+
 }
+
 
 .menu_sp .global_nav .nav_bar li a.active {
     color: orange;
 }
 
 .menu_sp .global_nav .nav_bar li i.material-icons {
-    vertical-align: middle!important;
+    vertical-align: middle;
     float: right;
+    line-height: 1.2;
 }
 
 .menu_sp .global_nav .nav_bar li > ul {
