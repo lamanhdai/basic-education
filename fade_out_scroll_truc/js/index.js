@@ -26,31 +26,14 @@
                 navCloseHandler();
             });
             $win.on({
-                // "load": function() {
-                //     $slider_html = $('#slider').html();
-                //     if (isIELegacy) {
-                //         ie8Init();
-                //     }
-                // },
-                "load resize": function() {
-                    resizeHandler();
-                },
                 "scroll": function() {
-                    scrollHandler();
+                    scrollInfobox();
                 }
             });
 
         }
 
-
-        scrollHandler = function() {
-            if (!widthFlg) {
-                scrollInfobox();
-            }
-        }
-
-        scrollInfobox = function() {
-
+        function scrollInfobox() {
             var
                 top_window = $win.scrollTop(),
                 win_height = $win.height();
@@ -78,7 +61,7 @@
                         }, 500, 'easeOutQuad');
                 }
             });
-        };
+        }
 
         /**
          * navCloseHandler
@@ -89,7 +72,6 @@
 
             }
         }
-
 
         return {
             init: init
