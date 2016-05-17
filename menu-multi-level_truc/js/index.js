@@ -47,9 +47,16 @@
             menuPC();
             menuSP();
             dropdownList();
+            
+            $navItem.not(".dropdown_list").find("a").append('<i class="material-icons">remove</i>');
+            $dropdownItem.append('<i class="material-icons">keyboard_arrow_right</i>');
+            if (widthFlg) {
+                $btnMenu.css('display', 'block');
+            } else {
+                $btnMenu.css('display', 'none');
+                return false;
+            }
         }
-
-
         /**
          * Menu for PC
          */
@@ -74,26 +81,25 @@
          * Menu for SP
          */
         function menuSP() {
-            $btnMenu.css('display', 'block');
             var heightMenu = $win.height();
             $btnMenu.click(function(e) {
                 if ($navigation.hasClass('show')) {
-                    $navigation.stop().animate({ 'margin-left': "100%", easing: "easeInBounce" }, 300);
+                    $navigation.stop().animate({ 'margin-left': "100%"}, {duration: 300, easing: "easeOutBack"});
                     $navigation.removeClass('show');
-                    $("body").css('overflow-x', 'auto');
+                    // $("body").css('overflow-x', 'auto');
                     // $("body").removeClass("push_right").stop().animate({ 'right': "0", easing: "easeInBounce" }, 300);
                     $(this).text("menu");
                 } else {
-                    $navigation.stop().animate({ 'margin-left': "-15px", easing: "easeOutBounce" }, 300);
+                    $navigation.stop().animate({'margin-left': "-15px"}, {duration: 300, easing: "swing"});
                     $navigation.addClass('show');
-                    $navigation.css('height', heightMenu);
-                    $("body").css('overflow-x', 'hidden');
-                    // $("body").addClass("push_right").stop().animate({ 'right': "100%", easing: "easeOutBounce" }, 300);
+                    $navigation.css('height');
+                    // $("body").css('overflow-x', 'auto');
+                    // $("body").addClass("push_right").stop().animate({ 'right': "100%", easing: "easeOutBounce" }, {duration: 300, easing: "easeOutBack"});
                     $(this).text("close");
                 }
             });
             $btnClose.click(function(e) {
-                $navigation.stop().animate({ 'margin-left': "100%", easing: "easeInBounce" }, 300);
+                $navigation.stop().animate({'margin-left': "100%"}, {duration: 300, easing: "easeOutBack"});
                 $navigation.removeClass('show');
                 $btnMenu.text("menu");
             });
@@ -105,17 +111,15 @@
          */
 
         function dropdownList() {
-            $navItem.not(".dropdown_list").find("a").append('<i class="material-icons">remove</i>');
-            $dropdownItem.append('<i class="material-icons">keyboard_arrow_right</i>');
             $dropdownItem.click(function() {
                 if (widthFlg) {
                     $(this).toggleClass('active');
                     if ($(this).hasClass('active')) {
-                        $(this).next("ul").stop().slideDown(400);
+                        $(this).next("ul").stop().slideDown({duration: 300, easing: "easeOutBack"});
                         $(this).find('.material-icons').text('keyboard_arrow_down');
 
                     } else {
-                        $(this).next("ul").stop().slideUp(400);
+                        $(this).next("ul").stop().slideUp({duration: 300, easing: "easeOutBack"});
                         $(this).find('.material-icons').text('keyboard_arrow_right');
 
                     }
