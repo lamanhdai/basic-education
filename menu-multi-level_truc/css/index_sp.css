@@ -52,17 +52,27 @@
 ----------------------------------------*/
 
 .menu_sp {
-    position: fixed;
+    position: absolute;
     background: #f1f1f1;
-    top: 0;
     margin-left: 100%;
     display: block;
     height: auto;
     line-height: 1.2;
     width: 100%;
-    float:none;
     top: 60px;
 }
+
+
+.menu_sp.show {
+   border-top:1px solid #1B6FB1;
+   overflow: auto;
+}
+.menu_sp:after{
+  display:block;
+  content:" ";
+  clear:both;
+}
+
 .menu_sp .global_nav .nav_bar li .btn-close {
   text-align:center;
   display: block;
@@ -80,14 +90,6 @@
   padding-bottom: 3px;
 }
 
-.menu_sp.show {
-   border-top:1px solid #1B6FB1;
-}
-.menu_sp:after{
-  display:block;
-  content:"";
-  clear:both;
-}
 
 .menu_sp .global_nav ul {
     list-style: none;
@@ -95,7 +97,7 @@
 }
 .menu_sp .global_nav ul li a {
     border-bottom: 1px solid rgba(0,0,0,.1);
-    font-size: 1.4em;
+    font-size: 117%;
     text-decoration:none;
     color:#1B6FB1;
 }
