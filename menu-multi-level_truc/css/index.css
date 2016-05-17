@@ -50,6 +50,10 @@
     float: left;
 }
 
+.menu_sp .global_nav .nav_bar li .btn-close {
+  display:none;
+}
+
 .menu_sp .global_nav .nav_bar {
     height: 60px;
     margin-bottom: 0;
@@ -59,12 +63,6 @@
     list-style: none;
     padding: 0;
 }
-
-
-/* .menu_sp .global_nav ul li{
-  list-style: none;
-  float:left;
-} */
 
 .menu_sp .global_nav .nav_bar > li {
     float: left;
@@ -79,10 +77,6 @@
     color: orange;
 }
 
-/* .menu_sp .global_nav .nav_bar .dropdown_list.active {
-    display: block;
-    color: orange;
-} */
 .menu_sp .global_nav .nav_bar li{
   position: relative;
 }
