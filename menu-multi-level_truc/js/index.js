@@ -1,4 +1,5 @@
-;(function($, win) {
+;
+(function($, win) {
     'use strict';
 
     var Menu = $.Menu = (function(e) {
@@ -46,7 +47,6 @@
             menuPC();
             menuSP();
             dropdownList();
-            closeMenu();
         }
 
 
@@ -99,20 +99,16 @@
             });
         }
 
-        function closeMenu() {
-
-        }
-
         /**
          * navbar$Dropdown
          * Click to open/hide $dropdown-menu on SP
          */
 
         function dropdownList() {
-            if (widthFlg) {
-                $navItem.not(".dropdown_list").find("a").append('<i class="material-icons">remove</i>');
-                $dropdownItem.append('<i class="material-icons">keyboard_arrow_right</i>');
-                $dropdownItem.click(function() {
+            $navItem.not(".dropdown_list").find("a").append('<i class="material-icons">remove</i>');
+            $dropdownItem.append('<i class="material-icons">keyboard_arrow_right</i>');
+            $dropdownItem.click(function() {
+                if (widthFlg) {
                     $(this).toggleClass('active');
                     if ($(this).hasClass('active')) {
                         $(this).next("ul").stop().slideDown(400);
@@ -123,8 +119,8 @@
                         $(this).find('.material-icons').text('keyboard_arrow_right');
 
                     }
-                });
-            }
+                }
+            });
         }
 
         /**
