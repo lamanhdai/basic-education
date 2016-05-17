@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/*----------------------------------------
+    大見出し
+----------------------------------------*/
+
+/*  小見出し
+----------------------------------------*/
+
+.inner {
+  width: 760px;
+  margin: 50px auto 0;
+}
+.menu ul {
+  height: 45px;
+  overflow: hidden;
+  position: relative;
+}
+.menu li {
+  position: relative;
+  width: 200px;
+  margin-left: 10px;
+  float: left;
+  height: 45px;
+}
+.menu li.first {
+  margin-left: 0;
+}
+.menu li.active a {
+  height: 45px;
+  color: #000000;
+}
+.menu li a {
+  position: relative;
+  text-align: center;
+  background: #09e;
+  line-height: 45px;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+.menu li a .text {
+  position: relative;
+  z-index: 10;
+}
+.text {
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: .1em;
+}
+.bg_hover {
+  background-color: #6a7b8f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 9;
+  overflow: hidden;
+  visibility: inherit;
+  width: 100%;
+}

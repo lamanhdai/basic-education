@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<title></title>
+<link href="css/masonry-docs.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/index.css" rel="stylesheet" type="text/css" media="all">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+<script>
+$(function(){
+  $('.masonry_box').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: '.hero-grid__grid-sizer',
+    percentPosition: true
+  });
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="content">
+  <div class="container">
+    <div class="masonry_box hero-grid">
+      <div class="hero-grid__grid-sizer"></div>
+      <div class="item hero-grid__item grid-item hero-grid__item--texty hero-grid__item hero-grid__item--width3">
+        <h1 class="hero__title">Masonry</h1>
+        <p class="txt">Cascading grid layout library</p>
+      <!-- /.item --></div>
+      <div class="item hero-grid__item grid-item hero-grid__item">
+        <p>Download masonry.​pkgd.​min.js download masonry.​pkgd.​min.js</p>
+      <!-- /.item --></div>
+      <div class="item hero-grid__item grid-item hero-grid__item">
+        <p>Download these docs download these docs</p>
+      <!-- /.item --></div>
+      <div class="item hero-grid__item grid-item hero-grid__item">
+        <p>Masonry on GitHub masonry on GitHub</p>
+      <!-- /.item --></div>
+      <div class="item hero-grid__item grid-item hero-grid__item hero-grid__item--texty hero-grid__item--width2">
+        <h2 class="hero__what-is-title">What is Masonry?</h2>
+        <p class="hero__what-is-description">Masonry is a JavaScript grid layout library. It works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall. You’ve probably seen it in use all over the Internet.</p>
+      <!-- /.item --></div>
+      <div class="item hero-grid__item grid-item hero-grid__item">
+        <img src="img/img-01.jpg" height="379" width="300" alt="" />
+        <span>Webster Hall Timeline</span>
+      <!-- /.item --></div>
+      <div class="item hero-grid__item grid-item hero-grid__item">
+        <img src="img/img-02.jpg" height="379" width="300" alt="" />
+        <span>Halcyon theme</span>
+      <!-- /.item --></div>
+      <div class="item hero-grid__item grid-item hero-grid__item">
+        <img src="img/img-03.jpg" height="379" width="300" alt="" />
+        <span>RESIZE.THATSH.IT</span>
+      <!-- /.item --></div>
+      <div class="item hero-grid__item grid-item hero-grid__item">
+        <img src="img/img-04.jpg" height="379" width="300" alt="" />
+        <span>Tumblr Staff: Archive</span>
+      <!-- /.item --></div>
+      <div class="item hero-grid__item grid-item hero-grid__item">
+        <img src="img/img-05.png" height="379" width="300" alt="" />
+        <span>Kristian Hammerstad</span>
+      <!-- /.item --></div>
+      <div class="item hero-grid__item grid-item hero-grid__item">
+        <img src="img/img-06.jpg" height="379" width="300" alt="" />
+        <span>Loading Effects for Grid Items | Demo 2</span>
+      <!-- /.item --></div>
+       <div class="item hero-grid__item grid-item hero-grid__item">
+        <img src="img/img-07.jpg" height="379" width="300" alt="" />
+        <span>Erik Johansson</span>
+      <!-- /.item --></div>
+      <div class="item hero-grid__item grid-item hero-grid__item">
+        <img src="img/img-08.jpg" height="379" width="300" alt="" />
+        <span>Beyoncé | I Am</span>
+      <!-- /.item --></div>
+    <!-- /.masonry_box --></div>
+  <!-- /.inner --></div>
+<!-- /#content --></div>
+<!-- / #wrapper --></div>
+<script src="js/masonry-docs.min.js"></script>
+</body>
+</html>
