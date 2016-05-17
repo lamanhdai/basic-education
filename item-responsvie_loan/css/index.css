@@ -39,3 +39,7 @@
   font-size: 2rem;
   margin: 0 0 10px;
 }
+.grid-item {
+  height: auto;
+  border: none;
+}
