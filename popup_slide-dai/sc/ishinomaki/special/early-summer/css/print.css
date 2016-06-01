@@ -1,0 +1,13 @@
+@charset "utf-8";
+@media print{
+#print_image {
+	display: block;
+}
+#headContainer,
+#contentsContainer,
+#footContainer,
+hr,
+#topcontrol{
+	display: none;
+}
+}

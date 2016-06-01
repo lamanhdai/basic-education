@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    # 親ディレクトリのhtaccessを無効化するため、RewriteEngineを有効にする
+    # common-responsiveへ向いているパスはURL書き換えをしない。
+    RewriteEngine   on
+</IfModule>

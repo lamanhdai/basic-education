@@ -1,0 +1,992 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+b, strong {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+#searchBtn, #topSearchBtn {
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+/*clear fix*/
+.cfWrap, #contents, #fontSize, footer .inner, footer .pageLi, #footerInfo dl, #sort, .itemList, .itemList .dtl, .tableWrap, .calendarTable, .calendarTable tr, .weekTable .eventLi, .todayTable .dtl, .calendarControl, #post,
+.post, #shopSort, #shopPage .shopCont.clm, #dtlArea, .shopItem, #sale, #reserve, #special, #ticket .name, #card, #magazine .formWrap, #today .todayPost {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+#wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  width: auto;
+  margin: 0 auto;
+}
+
+/*box-sizeing*/
+header, #searchTxt, #topSearchTxt, #gNav, #gNavLi > li > .fade, #gNavLi .subNavLi, #language, #languageLi > li > .fade, #languageLi .subNavLi, #side, #footBnr, #footerBnrLi, #sort li, #sort .wrap, .itemList .wrap, .itemList .item, table, table tr, table th, table td, .calendarTable tbody, .rankingAllTable .thum img, #shopSort li, #shopSort .wrap, #shop .itemList .wrap, #shoplist .itemList .thum img, #sale .itemList .logo img, #special .itemList .thum img, #coupon .itemList .thum img, #ticket, #ticket .logo img, #recruit .itemList .thum img, .formTable th, .formTable .input01 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* common
+-------------------------*/
+html.open {
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  background: #fff;
+  font-size: 0.875em;
+  word-break: break-word;
+}
+body.open {
+  overflow: hidden;
+}
+body.fontS {
+  font-size: 0.750em;
+}
+body.fontM {
+  font-size: 0.875em;
+}
+body.fontL {
+  font-size: 1em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.fade,
+.wrap {
+  display: block;
+}
+.fade:hover,
+.wrap:hover {
+  text-decoration: none;
+}
+
+.phoneTxt {
+  cursor: default;
+  text-decoration: none !important;
+}
+.phoneTxt:hover {
+  text-decoration: none !important;
+}
+
+.ib {
+  display: inline-block;
+}
+
+.spCont {
+  display: none !important;
+}
+
+.inlineImg {
+  display: inline !important;
+  width: inherit !important;
+  margin: 0 !important;
+}
+
+/* #wrapper
+-------------------------*/
+#wrapper {
+  background: #fff;
+}
+
+#wrapper_header {
+  background: url(/sc/mori/img/index/bg-wrapper_header.png) repeat-x 0 0;
+  background-position: center top;
+  width: 100%;
+  
+}
+
+/* header
+-------------------------*/
+header {
+  position: relative;
+  width: 1280px;
+  padding: 15px 15px 15px;
+  border-bottom: 1px solid #000;
+  margin: 0 auto;
+  background: url(/sc/mori/img/index/bg-header.png) no-repeat 0 0;
+  z-index: 20;
+}
+header:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+header .logo {
+  width: 196px;
+  float: left;
+  margin: 15px auto 15px;
+}
+header .logo img{
+  width: 100% !important;
+}
+
+#headerSymbol {
+  float: right;
+  width: 990px;
+  margin-bottom: 7px;
+}
+#headerSymbol img {
+  margin: 0;
+  width: 100%!important;
+}
+
+/* search
+-------------------------*/
+#searchTxt {
+  position: absolute;
+  top: 184px;
+  left: 20px;
+  width: 208px;
+  height: 23px;
+  line-height: 23px;
+  font-size: 0.857em;
+  border: 1px solid #000;
+  padding: 0 4px;
+  border-radius: 0;
+}
+
+#topSearchTxt {
+  margin-bottom: 20px;
+  width: 208px;
+  height: 23px;
+  line-height: 23px;
+  font-size: 0.857em;
+  border: 1px solid #000;
+  padding: 0 4px;
+  border-radius: 0;
+}
+
+#searchBtn {
+  position: absolute;
+  top: 184px;
+  left: 227px;
+  width: 25px;
+  height: 25px;
+  line-height: 1;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  border-radius: 0;
+  background-image: url(/sc/common/img/btn_search_01.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 25px auto;
+  cursor: pointer;
+}
+
+#topSearchBtn {
+  width: 25px;
+  height: 25px;
+  line-height: 1;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  border-radius: 0;
+  background-image: url(/sc/common/img/btn_search_01.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 25px auto;
+  cursor: pointer;
+}
+
+/*  gNav
+-------------------------*/
+#spMenuWrap {
+  /* clear: both;
+  float: left;
+  width: 85%; */
+  /*width: 100%;*/
+}
+#spMenuWrap.only {
+  width: 100%;
+}
+
+#gNav {
+  border: none;
+}
+
+#gNavLi {
+  width: 100%;
+  display: table;
+}
+/* #gNavLi li {
+  background-repeat: no-repeat;
+  background-position: 8px 10px;
+  background-size: 25px auto;
+} */
+#gNavLi > li {
+  display: table-cell;
+  position: relative;
+  border: none;
+}
+#gNavLi > li:before {
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  top: 21px;
+  right: 9px;
+  background: #ccc;
+  content: "";
+}
+#gNavLi > li:after {
+  position: absolute;
+  width: 4px;
+  height: 14px;
+  top: 16px;
+  right: 14px;
+  background: #ccc;
+  content: "";
+}
+#gNavLi > li > .fade {
+  border: none;
+  padding: 22px 10px 0 0;
+  height: 53px;
+}
+#gNavLi > li.home > .fade {
+  padding-left: 41px;
+}
+#gNavLi > li.event > .fade {
+  padding-left: 43px;
+}
+#gNavLi > li.shop > .fade {
+  padding-left: 48px;
+}
+#gNavLi > li.guide  > .fade {
+  padding: 22px 0 0 46px;
+}
+#gNavLi > li.access > .fade {
+  padding-left: 63px;
+}
+#gNavLi > li.info  > .fade {
+  padding-left: 46px;
+}
+#languageLi > li > .fade {
+  color: #ffffff;
+  padding: 22px 0 0 44px; 
+}
+#gNavLi .open:after {
+  display: none;
+}
+#gNavLi .navTtl {
+  display: block;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 114%;
+  white-space: nowrap;
+}
+#gNavLi .subTtl {
+  font-size: 0.857em;
+}
+#gNavLi .sub {
+  display: none;
+}
+
+#gNavLi .home {
+   background: url(/sc/mori/img/index/ico-home.png) no-repeat left 3px;
+}
+#gNavLi .home:before, #gNavLi .home:after {
+  display: none;
+}
+#gNavLi .event {
+  background: url(/sc/mori/img/index/ico-event.png) no-repeat left 3px;
+}
+#gNavLi .shop {
+  background: url(/sc/mori/img/index/ico-shop.png) no-repeat left 3px;
+}
+#gNavLi .guide {
+  background: url(/sc/mori/img/index/ico-guide.png) no-repeat left 3px;
+}
+#gNavLi .access {
+  background: url(/sc/mori/img/index/ico-access.png) no-repeat left 3px;
+}
+#gNavLi .info {
+  background: url(/sc/mori/img/index/ico-info.png) no-repeat left 3px;
+}
+#languageLi .lang {
+  background: url(/sc/mori/img/index/ico-lang.png) no-repeat left 3px;
+}
+#gNavLi .subNavLi {
+  display: none;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  width: 100%;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+#gNavLi .subNavLi li {
+  background-color: #f4f4f4;
+  background-position: 10px 15px;
+  background-size: 15px auto;
+  position: relative;
+  border-top: 1px solid #ccc;
+}
+#gNavLi .subNavLi li:first-child {
+  border-top: none;
+}
+#gNavLi .subNavLi .fade {
+  padding: 15px 15px 15px 38px;
+  border-top: none;
+}
+
+#language {
+  width: 15%;
+  float: left;
+  border: 1px solid #ccc;
+  border: none;
+}
+
+#languageLi li {
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  background-size: 25px auto;
+}
+#languageLi > li {
+  position: relative;
+}
+#languageLi > li:before {
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  top: 21px;
+  right: 9px;
+  background: #ccc;
+  content: "";
+}
+#languageLi > li:after {
+  position: absolute;
+  width: 4px;
+  height: 14px;
+  top: 16px;
+  right: 14px;
+  background: #ccc;
+  content: "";
+}
+#languageLi > li > .fade {
+  padding: 20px 30px 0 50px;
+  height: 51px;
+}
+#languageLi .navTtl {
+  display: block;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 114%;
+}
+#languageLi .subTtl {
+  font-size: 0.857em;
+}
+#languageLi .open:after {
+  display: none;
+}
+#languageLi .sub {
+  display: none;
+}
+#languageLi .subNavLi {
+  display: none;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  width: 100%;
+  border-left: 1px solid #ccc;
+}
+#languageLi .subNavLi li {
+  background-color: #f4f4f4;
+  background-position: 10px 15px;
+  background-size: 15px auto;
+  border-right: 1px solid #ccc;
+}
+#languageLi .subNavLi .fade {
+  padding: 15px 15px 15px 38px;
+  white-space: nowrap;
+}
+
+/* contents
+-------------------------*/
+#contents {
+  width: 1280px;
+  margin: 0 auto;
+  background: #fff;
+  z-index: 10;
+}
+
+/* breadcrumb
+-------------------------*/
+#breadcrumb {
+  font-size: 0.786em;
+  padding: 20px;
+}
+#breadcrumb li {
+  display: inline-block;
+  margin-right: 5px;
+}
+#breadcrumb a {
+  padding-right: 8px;
+  text-decoration: underline;
+}
+#breadcrumb a:hover {
+  text-decoration: none;
+}
+#breadcrumb .current {
+  cursor: default;
+  text-decoration: none;
+}
+
+/*  #body
+-------------------------*/
+#contInner {
+  margin-left: 260px;
+}
+
+#main {
+  float: right;
+  width: 100%;
+  margin-left: -260px;
+  border-left: 1px solid #000;
+  padding-bottom: 30px;
+}
+
+/*  side
+-------------------------*/
+#side {
+  float: left;
+  width: 260px;
+  padding: 20px 20px 30px 0;
+  border-right: 1px solid #000;
+  background: #fff;
+}
+#side .youtube {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+  clear: both;
+}
+#side .youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#side .iframeBnr {
+  margin-bottom: 10px;
+}
+#side .iframeBnr iframe {
+  width: 100%;
+}
+#side .bnr {
+  margin-bottom: 10px;
+}
+#side .facebook {
+  margin-bottom: 20px;
+}
+#side .facebook .fb-like-box,
+#side .facebook .fb-like-box span,
+#side .facebook .fb-like-box iframe {
+  display: block;
+  width: 100% !important;
+}
+#side .snsLi {
+  text-align: center;
+}
+#side .snsLi li {
+  display: inline-block;
+  margin-left: 2px;
+}
+#side .snsLi li:first-child {
+  margin-left: 0;
+}
+
+#fontSize {
+  font-size: 0.857em;
+  background: #eee;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+#fontSize dt {
+  float: left;
+  font-weight: bold;
+  padding: 2px 0;
+}
+#fontSize dt + dd {
+  border-left: none;
+}
+#fontSize dd {
+  float: left;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px solid #000;
+}
+#fontSize .ib {
+  padding: 2px 1px;
+}
+#fontSize .ib:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.fontS #fontS {
+  background: #000;
+  color: #fff;
+}
+
+.fontM #fontM {
+  background: #000;
+  color: #fff;
+}
+
+.fontL #fontL {
+  background: #000;
+  color: #fff;
+}
+
+/* footer
+-------------------------*/
+#footBnr {
+  position: relative;
+  clear: both;
+  padding-left: 259px;
+  width: 1280px;
+  margin: 0 auto;
+  left: 0;
+  text-align: center;
+  z-index: 1;
+  background: #fff;
+}
+
+#footerBnrLi {
+  padding: 20px 0 10px 10px;
+  background: #eee;
+  border-left: 1px solid #000;
+  width: 100%;
+  overflow: hidden;
+}
+#footerBnrLi li {
+  display: inline-block;
+  margin: 0 3px 10px 3px;
+}
+
+footer {
+  position: relative;
+  clear: both;
+  background: #fff;
+  width: 100%;
+}
+footer .container {
+  width: 1280px;
+  margin: 0 auto;
+  border-top: 1px solid #000;
+}
+footer .inner {
+  position: relative;
+  width: 1240px;
+  margin: 0 auto;
+}
+footer .footerPageLi {
+  padding: 30px 0 0;
+  float: left;
+}
+footer .logo {
+  float: right;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer .pageLi {
+  clear: both;
+  margin: 0 0 30px;
+  padding: 0 30px 0 0;
+  font-size: 0.857em;
+  color: #000;
+  line-height: 1.2;
+}
+footer .pageLi li {
+  float: left;
+  padding: 0 10px;
+  border-right: 1px solid #777;
+}
+footer .pageLi li:first-child {
+  border-left: 1px solid #777;
+}
+footer .pageLi + .pageLi {
+  margin: -20px 0 30px;
+}
+#footer_wrapper{
+  width: 100%;
+  background: #8bbf1e;
+}
+#footerInfo {
+  width: 1280px;
+  margin:auto;
+  color: #fff;
+  line-height: 150%;
+  padding: 20px 0;
+}
+#footerInfo .infoWrap {
+  float: left;
+  font-size: 1em;
+}
+#footerInfo .phoneTxt {
+  color: #fff;
+}
+#footerInfo .address {
+  margin-bottom: 20px;
+}
+#footerInfo dt {
+  float: left;
+  clear: both;
+}
+#footerInfo dd {
+  float: left;
+  margin-left: 10px;
+}
+
+
+#pagetop {
+  position: fixed;
+  right: 20px;
+  bottom: 55px;
+  z-index: 2;
+}
+
+#loader,
+#fade,
+#topMenu,
+#inner_menu,
+#closeBtn,
+#js_menu,#layer {
+  display: none;
+}
+
+
+
+  #side {
+    width: 280px;
+    padding: 20px 20px 30px 20px;
+  }
+
+  #wrapper.top #side {
+    padding: 20px 20px 30px 20px;
+  }
+
+  #contInner {
+    margin-left: 280px;
+  }
+
+  #main {
+    margin-left: -280px;
+  }
+
+  #footBnr {
+    padding-left: 279px;
+  }
+
+  footer .inner {
+    padding: 0 20px;
+  }
+
+  #copyright {
+    display: none;
+  }
+
+
+.spCont {
+  display: none !important;
+}
+#gNavLi > li:before,
+#languageLi > li:before {
+  display: none;
+}
+#gNavLi > li:after,
+#languageLi > li:after {
+  display: none;
+}
+#gNavLi > li > a {
+  color: #ffffff;
+}
+#gNavLi .subNavLi {
+  top: 63px;
+  border: 1px solid #d2e4ac;
+}
+#gNavLi .subNavLi .fade {
+  color: #8ec31f;
+}
+#gNavLi .subNavLi li {
+  border-top: 1px solid #d2e4ac;
+  background-color: #ffffff;
+}
+#gNavLi .subNavLi li:hover {
+  background-color: #faffd8;
+}
+#gNavLi .subNavLi li:hover .fade {
+  opacity: 1 !important;
+}
+/*#gNavLi .subNavLi li.shop {
+  padding-left: 0;
+  background: url(/sc/mori/img/index/ico-nav_sub.png) no-repeat left center;
+}*/
+#gNavLi .subNavLi li.subEvent .fade {
+  background: url(/sc/mori/img/index/ico-sub_event.png) no-repeat 10px center;
+}
+#gNavLi .subNavLi li.subShop .fade {
+  background: url(/sc/mori/img/index/ico-sub_shop.png) no-repeat 10px center;
+}
+#gNavLi .subNavLi li.subGuide .fade {
+  background: url(/sc/mori/img/index/ico-sub_guide.png) no-repeat 10px center;
+}
+#gNavLi .subNavLi li.subAccess .fade {
+  background: url(/sc/mori/img/index/ico-sub_access.png) no-repeat 10px center;
+}
+#gNavLi .subNavLi li.subInfo .fade {
+  background: url(/sc/mori/img/index/ico-sub_info.png) no-repeat 10px center;
+}
+#languageLi .subNavLi {
+  border-left: 0;
+  top: 63px;
+}
+#languageLi .subNavLi li {
+    background-color: #ffffff;
+    background-position: 10px 15px;
+    background-size: 15px auto;
+    border-top: 1px solid #d2e4ac;
+    border-left: 1px solid #d2e4ac;
+    border-right: 1px solid #d2e4ac;
+}
+#languageLi .subNavLi li:last-child {
+  border-bottom: 1px solid #d2e4ac;
+}
+#languageLi .subNavLi li:hover {
+  background-color: #faffd8;
+}
+#languageLi .subNavLi li.subLang .fade {
+  color: #8ec31f;
+  background: url(/sc/mori/img/index/ico-sub_lang.png) no-repeat 10px center;
+}
+/*  #content mori page update
+----------------------------------------*/
+#wrapper.top #main {
+  margin-top: 20px;
+  padding-top: 0;
+  padding-bottom: 250px;
+}
+#sort .active .wrap {
+  border-bottom: 5px solid #8fc31f;
+}
+#sort .wrap:hover {
+  border-bottom: 5px solid #8fc31f;
+}
+.itemList .item:hover {
+  background: #faffd8;
+}
+
+#side .bnr {
+  margin-bottom: 20px;
+}
+/* #wrapper.top #side {
+  margin-top: 20px;
+  padding: 0 30px 30px 0;
+} */
+#topSearchTxt {
+  width: 199px;
+}
+
+/*  #footerInfo
+----------------------------------------*/
+ #footerInfo {
+  background: #8bbf1e;
+  padding: 24px 0 36px;
+}
+#footerInfo .infoWrap {
+display: inline-block;
+}
+#footerInfo .address {
+  margin-bottom: 0;
+}
+.footerLogo {
+  width: 302px;
+  float: right;
+  display: inline-block;
+}
+.footerLogo img {
+  text-align: right;
+}
+#copyright {
+  display: none;
+}
+
+footer .logo {
+  display: none;
+}
+
+
+/*  #content mori page old
+----------------------------------------*/
+.itemList .sns {
+  position: absolute;
+  left: 48px;
+  bottom: 28px;
+}
+.itemList .sns dt,
+.itemList .sns dd {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#sort {
+  width: 100%;
+  margin-left: 0;
+}
+
+#sort li {
+  width: 25%;
+}
+
+#sort li:first-child {
+  border-left: none;
+}
+
+#sort .wrap {
+  min-width: 120px;
+}
+
+h2.sortTtl,
+#sort .sub {
+  margin-left: 25%;
+  text-align: left;
+}
+
+#side .contact li {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+#side .contact .title {
+  font-size: 1em;
+  display: block;
+  font-weight: bold;
+  padding: 3px 0 1px 20px;
+  margin-bottom: 10px;
+}
+
+#side .contact .txt {
+  line-height: 1.6em;
+}
+
+#side .contact .txt a {
+  text-decoration: underline;
+}
+
+#side .contact .time .title {
+  background: url(/sc/mori/img/ico-time.png) no-repeat 0 50%;
+}
+
+#side .contact .position .title {
+  background: url(/sc/mori/img/ico-position.png) no-repeat 0 50%;
+}
+
+#side .contact .phone .title {
+  background: url(/sc/mori/img/ico-phone.png) no-repeat 0 50%;
+}
+
+#sort .recruit .wrap {
+  background-image: url(/sc/common-responsive/img/ico_recruit_01.png);
+}
+
+#sort .recruit .wrap {
+  background-image: url(/sc/common-responsive/img/ico_recruit_01.png);
+}
+
+#sort .shop .wrap {
+  background-image: url(/sc/common-responsive/img/ico_shop_04.png);
+}
+
+#sort .info .wrap {
+  background-image: url(/sc/common-responsive/img/ico_info_02.png);
+}
+
+#sort .event .wrap {
+  background-image: url(/sc/common-responsive/img/ico_event_02.png);
+}
+
+#footerBnrLi {
+  padding: 20px 0 10px 0;
+}
+
+
+#dum{
+  height: 500px;
+  background-color: #cccccc;
+}

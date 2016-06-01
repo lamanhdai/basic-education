@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*----------------------------------------
+  .top_footer
+----------------------------------------*/
+.top_footer {
+  margin-bottom: 0.78125%;
+}
+.top_footer ul.social {
+  width: 40.31%;
+  margin: 0 auto;
+  margin-bottom: 5.46875%;
+}
+.top_footer ul.social img{
+  width: 100%;
+  height: auto;
+}
+.top_footer ul.social li {
+  width: 33.33%;
+  float: left;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 3%;
+}
+.top_footer ul.social li.sp_icon {
+  display: block;
+}

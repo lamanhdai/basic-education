@@ -1,0 +1,218 @@
+.pageNav .current .wrap,
+.pageNav .current.wrap{
+  background: #B50080;
+  color: #fff;
+}
+.pageNav .current .wrap:hover,
+.pageNav .current.wrap:hover {
+  background: #B50080;
+  color: #fff;
+}
+
+#wrapper #symbol img {
+  width: 100%;
+}
+
+#event .weekTable dt.category{
+  width:70px;
+}
+
+#wrapper .itemList .thum img.noneImage{
+  width:100%;
+}
+
+#wrapper #post img.noneImage{
+  width:100%;
+}
+
+section#recruit #post.clm .snsLi {
+  left: 0px;
+}
+
+.clear{
+  clear:both;
+}
+
+/*  shop
+-------------------------*/
+
+.post, #shopList, #shopPage .shopCont.clm, #dtlArea, .shopItem, #sale, #reserve, #special, #card {
+  overflow: hidden;
+  *zoom: 1;
+}
+#shopList li, #shopList .wrap {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.shopTable td.pet{
+  overflow:hidden;
+}
+
+#shopList {
+  font-size: 0.857em;
+  border-left: 1px solid #000;
+}
+#shopList li {
+  float: left;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  background-repeat: no-repeat;
+  background-position: center 12px;
+  height: 40px;
+  border-bottom: 1px solid #000;
+}
+#shopList .active .wrap {
+  background: #000;
+  color: #fff;
+}
+#shopList .wrap {
+  padding: 0 15px;
+  height: 100%;
+}
+#shopList .wrap:hover {
+  background: #000;
+  color: #fff;
+}
+#shopList .sortTtl {
+  font-size: 1em;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+/*  ranking
+-------------------------*/
+#ranking .rankingTable .rankingLink{
+  text-decoration: underline;
+}
+
+
+/*  calendar
+-------------------------*/
+ul.calendarControl li.current a,
+.calendarControlBtns .current a{
+  color:#ffffff;
+}
+
+.calendarControlBtns{
+  overflow:hidden;
+}
+
+#News ul.calendarControl{
+  float:left;
+}
+
+#News .switchbtn{
+  float: right;
+  line-height:30px;
+  background: #000;
+  padding: 0 10px;
+  font-size: 1.143em;
+  font-weight: bold;
+}
+
+
+/*  coupon
+-------------------------*/
+#cpBox{
+  padding-bottom: 10px;
+  overflow: hidden;
+  height: 1%;
+  clear: both;
+}
+
+#leftBox{
+  float: left;
+  width: 114px;
+  margin-right: 20px;
+}
+#rightBox{
+  float: left;
+}
+@media screen and (max-width: 767px) {
+  #ticket .shopItem {
+    margin: 0 auto;
+  }
+  .itemList .wrapNoLink:before {
+    display:none;
+  }
+}
+
+
+/* top
+-------------------------*/
+#footerFlash{
+  margin-bottom: 30px;
+}
+
+/* magazine
+-------------------------*/
+#magazine .mailmagRules h2{
+  padding: 10px 20px;
+  margin:10px 0;
+  font-size: 1.286em;
+  font-weight: bold;
+  background: #ccc;
+}
+#magazine .mailmagRules .box li{
+  line-height: 1.3em;
+}
+#magazine .mailmagRules .box p, #magazine .mailmagRules .box ol{
+  margin-bottom: 1em;
+}
+.kiyaku{
+  text-decoration:underline;
+}
+
+#magazine .btnBlack{
+  margin:10px 0;
+  padding:10px 0;
+  display: block;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 0;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration:underline;
+  text-align:center;
+}
+#magazine .magazineAgree{
+  width:100%;
+}
+.magazineAgree .fade{
+  margin-bottom:10px;
+}
+#magazine .complateTxt p{
+  margin-top:10px;
+  text-decoration:underline;
+}
+#magazine .marginBtm10{
+  margin-bottom:10px;
+}
+#magazine .errorMessage{
+  border: 1px solid #FF4D4D;
+  color: #D90000;
+  font-size: 14px;
+  background: #FFCFBF;
+  margin: 10px 0;
+  padding: 10px;
+}
+#magazine .formTable .input01 {
+  width: 300px;
+  line-height: normal;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 0;
+  font-size: 1em;
+  appearance: none;
+}
+
+/* reserveTable
+ * -------------------------*/
+#News table.reserveTable tr td img {
+  max-width: 90%;
+}

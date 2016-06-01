@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+
+
+.pageTtl {
+  background: #000000;
+}
+#wrapper.top #main {
+  padding-top: 0;
+}
+#freePage table {
+  width: auto;
+}
+#freePage ul.listStyle {
+  list-style: disc;
+  margin-left: 1em;
+  padding-left: 1em;
+}
+#freePage ol.listStyle {
+  list-style: decimal;
+  margin-left: 1em;
+  padding-left: 1em;
+}
+/* NWL-376での追加 */
+#freePage p.list { 
+ margin-left:1em;
+ text-indent:-1em;
+}
+
+#freePage img {
+  display: inline;
+  margin: inherit;
+}
+#freePage ol.listStyle {
+  list-style: decimal;
+  margin-left: 1em;
+  padding-left: 1em;
+}
+/* NWL-376での追加 */
+#freePage p.list { 
+ margin-left:1em;
+ text-indent:-1em;
+}
+
+#pagetop {
+  position: fixed;
+  right: 20px;
+  bottom: 55px;
+  z-index: 2;
+}
+/* page
+-------------------------*/
+#page {
+  padding: 0 20px 20px;
+}
+#page.clm > .cfWrap {
+  padding: 0 20px;
+}
+@media screen and (max-width: 1280px) {
+  
+}
+@media screen and (max-width: 1220px) {
+  
+}
+@media screen and (max-width: 1035px) {
+  
+}
+@media screen and (max-width: 1025px) {
+  
+}
+@media screen and (max-width: 945px) {
+
+}
+@media screen and (max-width: 767px) {
+/*table*/
+  #freePage table {
+    width: 100%;
+  }
+  #freePage ul.listStyle {
+    list-style: disc;
+    margin-left: 1em;
+    padding-left: 1em;
+  }
+  /* sp page
+  -------------------------*/
+  #page {
+    padding: 20px 10px;
+  }
+  #page.clm > .cfWrap {
+    padding: 0;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  ul.anchor2 {
+    margin: 5px auto;
+    padding-left: 0;
+    list-style: none;
+  }
+}
+
+#freePage h4 {
+    margin-bottom: 10px !important;
+    border-bottom: none;
+}
+
+#freePage p {
+    padding-bottom: 20px !important;
+    border-bottom: 2px solid #999;
+}

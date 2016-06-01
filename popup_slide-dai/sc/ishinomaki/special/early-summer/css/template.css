@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+/* ============================================================================================================
+Title:テンプレートCSS
+Last Update:2011/02/04
+============================================================================================================ */
+
+html {
+	
+}
+body {
+	font-size: 76%;
+	line-height: 1.6;
+	color:#333333;
+    /font-family: "ＭＳ Ｐゴシック";
+    font-family: "ＭＳ Ｐゴシック"\9;
+}
+table {
+	line-height: 1.6;
+}
+.special_plan a {
+	color: #00a8ff;
+}
+.special_plan a:link, .special_plan a:visited {
+	text-decoration: underline;
+}
+.special_plan a:hover, a:active {
+	text-decoration: none;
+}
+#breadcrumb a {
+	color: #333;
+}
+
+/* contents_inner
+============================================================================================================ */
+.contents_inner {
+	width: 960px;
+	margin: 0 auto;
+}
+.contents_inner:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+}
+
+
+
+/* header
+============================================================================================================ */
+#headContainer {
+	border-top: 3px solid #aa187a;
+}
+#headContainer div {
+	width: 960px;
+	margin: 0 auto;
+}
+#headContainer div:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+}
+
+#headContainer h1, #headContainer p {
+	float: left;
+	padding-top: 12px;
+}
+#headContainer ul {
+	float: right;
+	width:710px;
+}
+#headContainer ul li {
+	float: left;
+}
+#headContainer ul#foreignsite {
+	width:263px;
+	height: 13px;
+	margin: 10px 0 26px 0;
+}
+#headContainer ul#foreignsite li {
+	height: 13px;
+	border-right: 1px solid #cecece;
+}
+
+/* header fontsize + search
+============================================================================================================ */
+#headContainer {
+	border-top-width:29px;
+}
+
+#headContainer .contents_inner {
+	position:relative;
+}
+
+#headContainer #fontsize_box {
+	width:176px;
+	height:19px;
+	position:absolute;
+	top:-24px;
+	right:187px;
+}
+
+#headContainer #fontsize_box dl {
+	width:176px;
+}
+
+#headContainer #fontsize_box dt {
+	float:left;
+	width:83px;
+}
+
+#headContainer #fontsize_box dd {
+	float:left;
+	width:22px;
+	margin-right:9px;
+}
+
+#headContainer #fontsize_box dd img {
+	cursor:pointer;
+}
+
+#headContainer #search_box {
+	width:177px;
+	height:19px;
+	position:absolute;
+	top:-24px;
+	right:0;
+}
+
+#headContainer #search_box form {
+	line-height:1;
+}
+
+#headContainer #search_box #MF_form_phrase {
+    width:154px;
+    height:19px;
+    padding:0 0 0 4px;
+    border:0;
+    background:url(/sc/common/img/header/twist/bg-search.gif) no-repeat;
+    line-height:1;
+    padding-top:4px\9;
+    height:15px\9;
+    *padding-top:4px;
+    *height:15px;
+}
+
+#headContainer #search_box td {
+    vertical-align: middle;
+}
+
+/* footer
+============================================================================================================ */
+#footContainer {
+	padding: 16px 0;
+	background: #efefef url(../../img/footer/twist/foot_line.gif) repeat-x;
+	border-top: 1px solid #dbdbdb;
+	color: #8b8b8b;
+	font-size: 10px;
+}
+
+#footContainer p {
+	float: left;
+}
+#footContainer #footNavi {
+	float: right;
+	text-align: right;
+}
+#footContainer #footNavi p {
+	float: none;
+	padding-top: 2px;
+	margin-bottom: 5px;
+}
+#footContainer a {
+	color: #8b8b8b;
+}
+#footContainer a:link, #footContainer a:visited {
+	text-decoration: none;
+}
+#footContainer a:hover, #footContainer a:active {
+	text-decoration: underline;
+}
+
+
+
+/* contents
+============================================================================================================ */
+#contentsContainer {
+	width: 960px;
+	margin: 0 auto 30px;
+}
+#contentsContainer:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+}
+
+/* contentsArea
+------------------------------------------------------------------- */
+#contentsArea {
+	width: 710px;
+	margin: 0 auto;
+}
+
+/* contentsArea h1
+------------------------------------------------------------------- */
+#contentsArea h1 {
+	margin-bottom: 10px;
+}
+
+
+/* topicPath
+------------------------------------------------------------------- */
+#topicPath {
+	margin-bottom: 5px;
+	text-align: right;
+}
+#topicPath a {
+	color: #990066;
+}
+
+
+/* side
+============================================================================================================ */
+#sideArea {
+	float: left;
+	width: 230px;
+	overflow:hidden;
+}
+
+#sideArea ul li {
+	margin-top: 5px;
+}
+
+/* sideNavi
+------------------------------------------------------------------------------- */
+#sideNavi {
+	margin-bottom: 20px;
+	padding: 10px 0;
+	background-color: #3dbadc;
+	text-align: center;
+}
+#sideNavi dt {
+	padding-bottom: 4px;
+}
+#sideNavi dd dt {
+	padding-bottom: 0;
+}
+#sideNavi dd.break {
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #64c8e3;
+}
+#sideNavi a {
+	display: block;
+	zoom: 1;
+}
+
+/* sideSubNavi
+------------------------------------------------------------------------------- */
+#sideSubNavi {
+	margin-top: 1px;
+	margin-bottom:1px;
+}
+#sideArea ul#sideSubNavi li {
+	margin-top: 0;
+	border-bottom: 1px solid #a59672;
+}
+#sideSubNavi li.last {
+	border-bottom: none;
+}
+
+
+/* 専門店街モバイルサイト
+------------------------------------------------------------------------------- */
+#sideMobile {
+	margin-top: 5px;
+	padding: 9px 9px 9px 15px;
+	border: 1px solid #bebebe;
+	line-height: 1.2;
+	zoom: 1;
+}
+#sideMobile:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+}
+#sideMobile h3 {
+	float: left;
+}
+#sideMobile p {
+	float: left;
+	width: 118px;
+	word-wrap: break-word;
+}
+#sideMobile .qr {
+	float: right;
+	width: auto;
+}
+
+
+/* sideBnr
+------------------------------------------------------------------- */
+
+#sideArea #sideBnr {
+	width:230px;
+	margin: 20px 0;
+	overflow:hidden;
+	border-top: 1px solid #cacaca;
+	border-left: 1px solid #cacaca;
+}
+
+#sideArea #sideBnr li {
+	float: left;
+	margin-top: 0;
+	border-right: 1px solid #cacaca;
+	border-bottom: 1px solid #cacaca;
+}
+
+/* sideBnrWide
+------------------------------------------------------------------- */
+#sideArea .sideBnrWide {
+	margin-top: 5px;
+}
+
+.imgL {
+	float:left;
+}
+.imgR {
+	float:right;
+}
+
+/*----------------------------------------
+	スマホ用ボタン
+-----------------------------------------*/
+a#viewMode {
+	display: block;
+	clear: both;
+	height: 40px;
+	text-align: center;
+	background: -moz-linear-gradient(top, #AE287F, #95236B);
+	background: -webkit-gradient(linear,center top, center bottom, from(#AE287F), to(#95236B));
+}

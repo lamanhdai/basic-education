@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+/* クーポン
+============================================================================================================ */
+
+
+#couponWrapper {
+	width:544px;
+	margin:0 auto;
+	padding:13px;
+	background:#fff;
+}
+#couponWrapper p.comment {
+	padding:0 20px;
+}
+#couponWrapper ul {
+	padding:0 20px;
+	margin:20px 0 18px 0;
+}
+
+div#coupon {
+	display:list-item;
+	width:542px;
+	margin:0 auto;
+	background:url(/sc/common/img/shop/twist/bg-coupon_body.gif) repeat-y top left;
+}
+
+div#coupon_top {
+	padding-top:20px;
+	background:url(/sc/common/img/shop/twist/bg-coupon_top.gif) no-repeat top left;
+}
+
+div#coupon_bottom {
+	padding-bottom:13px;
+	background:url(/sc/common/img/shop/twist/bg-coupon_bottom.gif) no-repeat bottom left;
+}
+
+div#webCoupon {
+	width:440px;
+	margin:0 auto;
+	padding:10px;
+	overflow:hidden;
+	border:#f5eff7 10px solid;
+}
+
+div#webCoupon div.scCoupon {
+	color:#fff;
+	overflow:hidden;
+	background:#80658b;
+}
+
+
+
+div#webCoupon div.scCoupon p.scName {
+	float:left;
+	width:290px;
+	padding:7px 0 0 10px;
+	font-weight:bold;
+	font-size:146%;
+}
+
+div#webCoupon div.scCoupon p.webOnly {
+	padding:10px 10px 10px 0;
+	float:right;
+}
+
+div#webCoupon h1 {
+	margin-top:15px;
+	text-align:center;
+	font-size:146%;
+	font-weight:bold;
+}
+div#webCoupon h1 span.floor {
+	color:#3dbadc;
+}
+
+div#webCoupon h2 {
+	margin:10px auto;
+	padding-bottom:20px;
+	border-bottom:1px solid #dadada;
+	text-align:center;
+}
+
+div#webCoupon p.attention {
+	float:left;
+}
+
+div#webCoupon p.period {
+	float:right;
+	color:#e50202;
+}
+
+#couponWrapper p.print {
+	width:246px;
+	text-align:center;
+	margin:30px auto 0 auto;
+}

@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+#main {
+  padding-bottom: 0;
+}
+#wrapper.top #main {
+  padding-top: 0;
+}
+#contentsContainer {
+  margin-left: 20px;
+}
+
+/*=======================================
+  .ico footer
+=======================================*/
+#side .contact .time .title {
+  background: url(/sc/common-responsive/img/ico-time.png) no-repeat 0 50%;
+}
+#side .contact .position .title {
+  background: url(/sc/common-responsive/img/ico-position.png) no-repeat 0 50%;
+}
+#side .contact .phone .title {
+  background: url(/sc/common-responsive/img/ico-phone.png) no-repeat 0 50%;
+}
+
+/*=======================================
+  chirstmas content
+=======================================*/
+.chirstmas_content {
+  background: #c20b23;
+  padding-bottom: 50px;
+}
+.chirstmas_content .bg_chirstmas {
+  background: url(/sc/common/campaign/xmas-lots/img/bg-chirstmas.png) no-repeat top center;
+}
+.chirstmas_content .main_title {
+  padding: 14px 27px 0 16px;
+}
+.chirstmas_content .time_performance {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.chirstmas_content .guide_content {
+  width: 900px;
+  margin: 0 auto;
+  background: url(/sc/common/campaign/xmas-lots/img/bg-content_middle.png) repeat-y top center;
+}
+.chirstmas_content .content_top {
+  padding-top: 70px;
+  background: url(/sc/common/campaign/xmas-lots/img/bg-content_top.png) no-repeat top center;
+}
+.chirstmas_content .content_bottom {
+  padding-bottom: 70px;
+  background: url(/sc/common/campaign/xmas-lots/img/bg-content_bottom.png) no-repeat bottom center;
+}
+.chirstmas_content .content_middle {
+  padding: 0 65px;
+  background: url(/sc/common/campaign/xmas-lots/img/bg-content_middle.png) repeat-y 0 0;
+}
+.chirstmas_content .content_middle {
+  font-size: 76%;
+}
+.chirstmas_content .content_middle p {
+  font-size: 134%;
+  line-height: 1.57em;
+}
+.chirstmas_content .color {
+  color: #c20b23;
+}
+.chirstmas_content .period_campaign {
+  margin-top: 20px;
+  border-top: 5px solid #c20b23;
+  border-bottom: 5px solid #c20b23;
+}
+.chirstmas_content .period_campaign dl {
+  width: 50%;
+  float: left;
+}
+.chirstmas_content .inner_period {
+  overflow: hidden;
+  margin: 3px 0;
+  padding: 5px 0 12px;
+}
+.chirstmas_content .line_divide {
+  background: url(/sc/common/campaign/xmas-lots/img/img-line_divide.png) repeat-y top center;
+}
+.chirstmas_content .period_campaign dt {
+  font-size: 134%;
+  color: #c20b23;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+.chirstmas_content .period_campaign dd {
+  font-size: 167%;
+  font-weight: bold;
+}
+.chirstmas_content .period_campaign dl.shop_columns {
+  width: 47.41%;
+}
+.chirstmas_content .shop_columns {
+  padding-left: 2.59%;
+}
+.chirstmas_content .txt_note {
+  font-size: 100%;
+  line-height: 1.57em;
+  margin-top: 22px;
+}
+.chirstmas_content .button_campaign {
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 5px;
+}
+.chirstmas_content .button_campaign a {
+  display: inline-block;
+}
+.chirstmas_content .show_event {
+  margin-top: 23px;
+  overflow: hidden;
+}
+.chirstmas_content .show_event.space_top {
+  margin-top: 12px;
+}
+.chirstmas_content .style_box {
+  border: 2px solid #c61a31;
+  border-radius: 30px;
+  padding: 7px;
+}
+.chirstmas_content .col_left {
+  width: 500px;
+  float: left;
+}
+.chirstmas_content .col_right {
+  width: 217px;
+  float: right;
+}
+.chirstmas_content .show_event span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.chirstmas_content .show_event span.show_icon {
+  vertical-align: top;
+}
+.chirstmas_content .show_event span.txt {
+  padding-left: 7px;
+  font-size: 167%;
+}
+.chirstmas_content .show_event span.txt.time_row {
+  word-spacing: -30px;
+}
+.chirstmas_content .icon_location img,
+.chirstmas_content .icon_time img,
+.chirstmas_content .icon_ticket img {
+  display: none !important;
+}
+.chirstmas_content .icon_location {
+  background: url(/sc/common/campaign/xmas-lots/img/scr/ico-location.png) no-repeat 0 0;
+  width: 219px;
+  height: 30px;
+}
+.chirstmas_content .icon_time {
+  background: url(/sc/common/campaign/xmas-lots/img/scr/ico-time.png) no-repeat 0 0;
+  width: 78px;
+  height: 30px;
+}
+.chirstmas_content .icon_ticket {
+  background: url(/sc/common/campaign/xmas-lots/img/scr/ico-ticket.png) no-repeat 0 0;
+  width: 219px;
+  height: 30px;
+}
+/*  sp
+--------------------------------*/
+@media screen and (max-width:1280px) {
+  #contentsContainer {
+    margin: 8px 20px 0;
+  }
+  .chirstmas_content {
+    padding-bottom: 24px;
+  }
+  .chirstmas_content .guide_content {
+    width: 95.32%;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -ms-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+  .chirstmas_content .bg_chirstmas, .chirstmas_content .content_top, .chirstmas_content .content_bottom, .chirstmas_content .content_middle {
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -ms-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+  .chirstmas_content .col_left {
+    width: 65.33%;
+    padding: 0.9%;
+  }
+  .chirstmas_content .col_right {
+    width: 27.99%;
+    padding: 0.9%;
+  }
+}
+@media screen and (max-width:1220px) {
+  #contentsContainer {
+    margin: 0;
+  }
+}
+@media screen and (max-width:1035px) {
+}
+@media screen and (max-width:1025px) {
+  .chirstmas_content .bg_chirstmas {
+    background: url(/sc/common/campaign/xmas-lots/img/sp/bg-chirstmas.png) no-repeat top center;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -ms-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+  .chirstmas_content .content_middle {
+    font-size: 100%;
+  }
+  .chirstmas_content .content_middle p {
+    font-size: 100%;
+  }
+  .chirstmas_content .main_title {
+    padding: 7px 2.34% 0;
+  }
+  .chirstmas_content .time_performance {
+    width: 94.09%;
+    margin: 0 auto;
+  }
+  .chirstmas_content .time_performance {
+    margin-top: 7px;
+    margin-bottom: 10px;
+  }
+  .chirstmas_content .content_middle {
+    padding: 0 9.02%;
+  }
+  .chirstmas_content .inner_period {
+    padding: 15px 0;
+    margin: 0;
+  }
+  .chirstmas_content .period_campaign {
+    margin-top: 24px;
+    border-top: 3px solid #c20b23;
+    border-bottom: 3px solid #c20b23;
+  }
+  .chirstmas_content .period_campaign dl, .chirstmas_content .period_campaign dl.shop_columns {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  .chirstmas_content .period_campaign dl.shop_columns {
+    border-top: 1px solid #c20b23;
+    margin-top: 19px;
+    padding-top: 20px;
+  }
+  .chirstmas_content .period_campaign dt {
+    font-size: 150%;
+    padding-bottom: 8px;
+  }
+  .chirstmas_content .period_campaign .font_style {
+    font-size: 125%;
+  }
+  .chirstmas_content .period_campaign dd {
+    font-size: 109%;
+  }
+  .chirstmas_content .line_divide {
+    background: none;
+  }
+  .chirstmas_content .show_event {
+    margin-top: 21px;
+  }
+  .chirstmas_content .col_left, .chirstmas_content .col_right {
+    width: 100%;
+    padding: 0;
+    float: none;
+    border: none;
+  }
+  .chirstmas_content .col_right {
+    margin-top: 9px;
+  }
+  .chirstmas_content .show_event span.txt, .chirstmas_content .show_event span.txt.time_row {
+    font-size: 100%;
+  }
+  .chirstmas_content .txt_note {
+    font-size: 92%;
+    margin-top: 18px;
+    line-height: 1.57em;
+  }
+  .chirstmas_content .button_campaign {
+    margin-top: 23px;
+  }
+  .chirstmas_content .show_event .show_icon {
+    width: 20%;
+  }
+  .chirstmas_content .show_event .show_icon img {
+    width: 100%;
+    height: auto;
+  }
+  .chirstmas_content .show_event.space_top {
+    margin-top: 9px;
+  }
+  .chirstmas_content .icon_location img,
+  .chirstmas_content .icon_time img,
+  .chirstmas_content .icon_ticket img {
+    display: block !important;
+  }
+  .chirstmas_content .show_icon.icon_location,
+  .chirstmas_content .show_icon.icon_time,
+  .chirstmas_content .show_icon.icon_ticket {
+    width: 34%;
+    background: none;
+    height: auto;
+  }
+}
+@media screen and (max-width:945px) {
+  .chirstmas_content .content_top {
+    padding-top: 50px;
+  }
+  .chirstmas_content .content_bottom {
+    padding-bottom: 50px;
+  }
+  .chirstmas_content .chirstmas_content {
+    padding-bottom: 2.34%;
+  }
+}
+@media screen and (max-width:767px) {
+  #contentsContainer {
+    margin: 0;
+  }
+  #contentsContainer img {
+    width: 100%;
+    height: auto
+  }
+}
+@media screen and (max-width:320px) {
+  .chirstmas_content .content_top {
+    padding-top: 30px;
+  }
+  .chirstmas_content .content_bottom {
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+.pageTtl {
+  background: #000000;
+}
+
+#floorFlashLarge,
+#floorFlashSmall {
+  padding-left: 20px;
+}
+#floorFlashSmall {
+  display: none;
+}
+#pdfdl {
+  text-align: left;
+  padding-left: 20px;
+  margin: 30px 0 0 0;
+  width: 100%;
+}
+#pdfdl .pdfdlbg p {
+  margin-bottom: 30px;
+}
+#pdfdl .pdfdlbg img {
+  margin: 0;
+}
+#pdfdl .adobereader .photo {
+  float: left;
+  margin-right: 12px;
+}
+#pdfdl .adobereader .txt {
+  padding-top: 2px;
+  font-size: 84%;
+  color: #333333;
+  line-height: 1.4em;
+}
+#floor_sp {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  #floorFlashLarge {
+    display: none;
+  }
+  #floorFlashSmall {
+    display: block;
+  }
+}
+@media screen and (max-width: 1220px) {
+  
+}
+@media screen and (max-width: 1035px) {
+  
+}
+@media screen and (max-width: 1025px) {
+  #floorFlashLarge,
+  #floorFlashSmall {
+    display: none;
+  }
+  #floor_sp {
+    display: block;
+    padding: 0 0 0 20px;
+  }
+  #floor_map {
+    clear: both;
+    margin-right: 2%;
+  }
+  #floor_map .no_flash {
+    display: none;
+  }
+  #floor_map .no_flash.floor01 {
+    display: block;
+  }
+  #tap_floor li {
+    float: left;
+    width: 32%;
+    margin-right: 1%;
+    margin-bottom: 10px;
+  }
+  #tap_floor li:last-child {
+    margin-right: 0;
+  }
+  #tap_floor li img {
+    max-width: auto;
+    width: 100%;
+  }
+  #floor_map .no_flash {
+    border: 5px solid #e6eff2;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    height: 0;
+    padding-bottom: 100%;
+  }
+  #floor_map .map img {
+    width: 90%;
+    margin-top: 5%;
+  }
+  .no_flash .reload_btn a {
+    display: block;
+    padding: 10px;
+  }
+  .no_flash .reload_btn {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+  }
+}
+@media screen and (max-width: 945px) {
+
+}
+@media screen and (max-width: 767px) {
+  #wrapper.top #main {
+    padding-top: 0;
+  }
+  #pdfdl .pdfdlbg img {
+    width: 100%;
+    height: auto;
+  }
+  #floor_sp {
+    padding: 8px 2.34% 0;
+    display: block;
+  }
+  #floor_map {
+    position: relative;
+    margin: 0;
+  }
+  #floor_sp .floor_nav {
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  #floor_sp img {
+    width: 100%;
+    height: auto;
+  }
+  #tap_floor li {
+    width: 32.78%;
+    float: left;
+    margin: 0;
+    padding-left: 0.82%;
+    cursor: pointer;
+  }
+  #tap_floor li#floor01 {
+    padding-left: 0;
+  }
+  #pdfdl {
+    width: auto;
+    margin-top: 0;
+    padding: 14px 2.34% 20px;
+  }
+  #pdfdl .adobereader .photo {
+    float: none;
+    width: 25.9%;
+    margin: 0 auto;
+  }
+  #pdfdl .pdfdlbg p {
+    margin-bottom: 15px;
+  }
+  #pdfdl .adobereader .txt {
+    padding-top: 13px;
+    margin-bottom: 0;
+    font-size: 100%;
+  }
+  .contact {
+    display: none;
+  }
+  #pagetop img,
+  .logo img {
+    margin: 0 auto;
+  }
+  #floor_map .no_flash .reload_btn img {
+    width: 25px;
+    height: 25px;
+  }
+  #floor_map .no_flash .map img {
+    width: 90%;
+  }
+}

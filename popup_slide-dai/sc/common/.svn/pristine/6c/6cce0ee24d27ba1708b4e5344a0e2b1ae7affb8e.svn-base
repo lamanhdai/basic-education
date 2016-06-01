@@ -1,0 +1,739 @@
+@charset "utf-8";
+
+/*---------------------------------------
+    reset css
+----------------------------------------*/
+
+#spMenuWrap {
+  width: 100%;
+}
+
+#main {
+  padding-bottom: 0;
+}
+
+#contentsContainer {
+  margin-left: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/*---------------------------------------
+    index.html
+----------------------------------------*/
+
+#omikuji {
+  background-color: #d72518;
+  padding: 0 0 35px;
+}
+
+#omikuji .top_content {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+#omikuji .top_content .top_box {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+#omikuji .top_content .title,
+#omikuji .top_content .info {
+  padding: 0 3.5%;
+}
+
+#omikuji .box {
+  background-color: #ffffff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin: 0 3.5%;
+}
+
+#omikuji .overview {
+  padding: 50px 4.83% 25px;
+}
+
+#omikuji .overview h3 {
+  font-size: 175%;
+  font-weight: bold;
+  text-align: center;
+  background: #ffe224;
+  color: #000000;
+  padding: 12px 0 8px;
+  margin:  0 0 24px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+#omikuji .overview dl {
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+#omikuji .overview dt {
+  width: 19%;
+  text-align: center;
+  padding: 8px 0 6px;
+  color: #ffffff;
+  background: #000000;
+  font-size: 117%;
+  float: left;
+  margin-right: 2%;
+}
+
+#omikuji .overview dd {
+  float: left;
+  width: 77%;
+  line-height: 1.5em;
+  color: #000000;
+}
+
+#omikuji .overview .mt15 {
+  display: block;
+  margin-top: 15px;
+}
+
+#omikuji .event {
+  margin: 0 4.83%;
+  padding: 40px 0 0;
+}
+
+#omikuji .introduce {
+  border: 6px solid #d72518;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#omikuji .introduce:after {
+  content:".";display:block;visibility:hidden;height:0.1px;font-size:0.1em;line-height:0;clear:both;
+}
+
+#omikuji .introduce .step {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  border-right: 6px solid #d72518;
+}
+
+#omikuji .introduce .application {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+#omikuji .introduce .title {
+  background: #e3e3e3;
+  padding-top: 16%;
+  position: relative;
+}
+
+#omikuji .introduce .title > h3 {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+#omikuji .step_info {
+  padding: 20px;
+}
+
+#omikuji .step_info dl {
+  margin-bottom: 20px;
+}
+
+#omikuji .step_info dt {
+  margin-bottom: 12px;
+}
+
+#omikuji .step_info dd {
+  overflow: hidden;
+}
+
+#omikuji .step_info dd .txt {
+  float: left;
+  width: 55%;
+  line-height: 1.5em;
+}
+
+#omikuji .step_info dd .thumb {
+  float: left;
+  width: 45%;
+}
+
+#omikuji .step_info .qr {
+  border: 5px solid #e3e3e3;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-top: 15px;
+}
+
+#omikuji .step_info a > img {
+  width: 100%;
+  height: auto;
+}
+
+#omikuji .step_info .link {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#omikuji .step_info h4 {
+  font-weight: bold;
+  font-size: 125%;
+  padding: 10px 0;
+  background: #e3e3e3;
+  color: #000000;
+}
+
+#omikuji .picture {
+  padding: 18px 0;
+}
+
+#omikuji .qr_txt {
+  line-height: 1.3em;
+}
+
+#omikuji .qr_txt > a,
+#omikuji .qr_txt > span {
+  font-weight: bold;
+  display: block;
+}
+
+/*---------------------------------------
+    chusen.html
+----------------------------------------*/
+
+.border_box {
+  border: 6px solid #d72518;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.wrap_box {
+  padding: 40px 4.83%;
+}
+
+#chusen .title {
+  background-color: #e3e3e3;
+  padding: 53px;
+  position: relative;
+}
+
+#chusen .title h3 {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+#chusen .txt_introduce {
+  overflow: hidden;
+  padding: 30px 9.6% 15px 4.8%;
+}
+
+#chusen .txt_introduce dt {
+  float: right;
+  width: 30%;
+}
+
+#chusen .txt_introduce dd {
+  float: left;
+  width: 70%;
+  font-size: 125%;
+  line-height: 1.4em;
+  font-weight: bold;
+}
+
+#chusen .txt_introduce dd strong {
+  font-size: 109%;
+}
+
+#chusen .list_color {
+  margin: 0 4.8%;
+  padding: 20px;
+  background-color: #fff2f2;
+}
+
+#chusen .list_color li {
+  color: #ff1100;
+  line-height: 1.4em;
+}
+
+#chusen .email_input {
+  padding: 20px 4.8% 40px;
+}
+
+#chusen .email_input dt {
+  font-size: 125%;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#chusen .email_input dt b {
+  color: #ff1100;
+  font-size: 109%;
+}
+
+#chusen .email_input input[type="text"] {
+  border: 5px solid #333333;
+  padding: 12px 0;
+  text-align: center;
+  width: 99%;
+  margin-bottom: 30px;
+}
+
+#chusen .email_input .submit {
+  text-align: center;
+}
+
+#chusen .email_input .submit a {
+  display: inline-block;
+}
+
+/*---------------------------------------
+    sho.html, shu.html ,dai.html
+----------------------------------------*/
+
+.winning {
+  padding: 50px 0;
+  margin: 0 9.8%;
+}
+
+.winning .txt_result {
+  text-align: center;
+  font-size: 159%;
+  padding: 28px 0 18px;
+}
+
+.winning .txt_result strong {
+  color: #d72518;
+  font-weight: normal;
+}
+
+.winning .txt_result span {
+  color: #000000;
+}
+
+.winning .txt_output {
+  border: 5px solid #333333;
+  display: table;
+  width: 94.5%;
+  padding: 12px;
+}
+
+.winning .txt_output span {
+  display: table-cell;
+  font-weight: bold;
+}
+
+.winning .txt_output .name {
+  font-size: 159%;
+  color: #000000;
+}
+
+.winning .txt_output .number {
+  font-size: 175%;
+  color: #d4141a;
+}
+
+.winning .txt_output .txt {
+  width: 50px;
+  font-size: 159%;
+  color: #000000;
+}
+
+.winning .note {
+  line-height: 1.5em;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.btn_return,
+.btn_home {
+  text-align: center;
+  padding: 50px 0 0;
+}
+
+.btn_return a,
+.btn_home a {
+  display: inline-block;
+}
+
+.error {
+  padding: 85px 0 50px;
+}
+
+.error .title_error {
+  text-align: center;
+  font-size: 217%;
+  font-weight: bold;
+  color: #000000;
+}
+
+.error .txt_error {
+  text-align: center;
+  font-size: 150%;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin: 18px 0 30px;
+  color: #000000;
+}
+.shake {
+  padding: 105px 0 88px;
+}
+
+.title_shake {
+  text-align: center;
+  font-size: 217%;
+  font-weight: bold;
+  color: #000000;
+  line-height: 1.56em;
+}
+
+.luck {
+  padding-top: 78px;
+  min-height: 343px;
+}
+
+#wrapper .luck img {
+  display: none;
+}
+
+
+/*  sp
+--------------------------------*/
+@media screen and (max-width:1280px) {
+  #contentsContainer {
+    margin: 8px 20px 0;
+  }
+}
+@media screen and (max-width:1220px) {
+  #contentsContainer {
+    margin: 0;
+  }
+}
+@media screen and (max-width:1035px) {
+  #chusen .title {
+    padding: 43px;
+  }
+}
+@media screen and (max-width:1025px) {
+  .title_shake {
+    font-size: 184%;
+  }
+}
+@media screen and (max-width:945px) {
+  #chusen .title {
+    padding: 40px;
+  }
+  .winning {
+    padding: 50px 0;
+    margin: 0 4.8%;
+  }
+  .title_shake {
+    font-size: 159%;
+  }
+}
+@media screen and (max-width:767px) {
+
+  #wrapper.top #main {
+    padding-top: 5%;
+  }
+  #contentsContainer {
+    margin: 0;
+  }
+  #contentsContainer img {
+    width: 100%;
+    height: auto
+  }
+  #omikuji {
+    background: #d72518;
+    padding: 0 0 10px;
+  }
+  #omikuji .overview {
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 25px 4.83% 5px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+  }
+  #omikuji .top_content {
+    margin-bottom: 3%;
+  }
+  #omikuji .top_content .title,
+  #omikuji .top_content .info {
+    padding: 0 2.34%;
+  }
+  #omikuji .box {
+    margin: 0 2.34%;
+    background-color: transparent;
+  }
+
+  #omikuji .introduce {
+    border: none;
+  }
+
+  #omikuji .overview dl {
+    margin-bottom: 15px;
+  }
+
+  #omikuji .overview dt {
+    width: 40%;
+    float: none;
+    font-size: 100%;
+    margin: 0 0 5px;
+  }
+
+  #omikuji .step_info {
+    padding: 10px;
+  }
+
+  #omikuji .overview dd {
+    float: none;
+    width: 100%;
+  }
+
+  #omikuji .overview h3 {
+    font-size: 150%;
+  }
+
+  #omikuji .event {
+    margin: 0;
+    padding: 0;
+  }
+
+  #omikuji .introduce .step {
+    float: none;
+    width: 100%;
+    border-right: none;
+    background-color: #ffffff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+  }
+
+  #omikuji .introduce .application {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #ffffff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+  }
+
+  #omikuji .introduce .title {
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  #omikuji .introduce .title > h3 {
+    bottom: 0;
+  }
+
+  /*--------------------------------------
+    chusen.html
+  --------------------------------------*/
+
+  .wrap_box {
+    background-color: #ffffff;
+    padding: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+  }
+
+  .border_box {
+    border: none;
+  }
+
+  #chusen .txt_introduce {
+    overflow: hidden;
+    padding: 15px 3% 10px;
+  }
+
+  #chusen .txt_introduce dt {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  #chusen .txt_introduce dt img {
+    width: 60%;
+  }
+
+  #chusen .txt_introduce dd {
+    float: none;
+    width: 100%;
+    font-size: 100%;
+    font-weight: bold;
+  }
+
+  #chusen .txt_introduce dd  strong {
+    font-size: 100%;
+  }
+
+  #chusen .list_color {
+    margin: 0 3%;
+    padding: 15px 10px;
+  }
+
+  #chusen .email_input {
+    padding: 20px 3%;
+  }
+
+  #chusen .email_input dt {
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #chusen .email_input input[type="text"] {
+    border: 3px solid #333333;
+    padding: 10px 0;
+    margin-bottom: 15px;
+  }
+
+  #chusen .email_input dd > a {
+    width: 62%;
+  }
+
+  #chusen .title {
+    padding: 0;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  #chusen .title h3 {
+    position: relative;
+  }
+
+  /*---------------------------------------
+    sho.html, shu.html ,dai.html
+  ----------------------------------------*/
+
+  .winning {
+    padding: 30px 0;
+    margin: 0;
+  }
+
+  .winning .winning_inner {
+    margin: 0 3%;
+  }
+
+  .winning .txt_result {
+    text-align: center;
+    font-size: 100%;
+    padding: 28px 0 18px;
+  }
+
+  .winning .txt_result strong {
+    font-size: 167%;
+    font-weight: bold;
+  }
+
+  .winning .txt_result span {
+    font-size: 125%;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .winning .txt_output {
+    width: 98%;
+    padding: 8px 0;
+  }
+
+  .winning .txt_output span {
+    display: table-cell;
+    font-weight: bold;
+  }
+
+  .winning .txt_output .name {
+    font-size: 109%;
+    color: #000000;
+    padding: 0 0 0 8px;
+  }
+
+  .winning .txt_output .number {
+    font-size: 117%;
+    color: #d4141a;
+  }
+
+  .winning .txt_output .txt {
+    width: 40px;
+    font-size: 109%;
+    color: #000000;
+  }
+
+  .winning .note {
+    line-height: 1.5em;
+    color: #000000;
+    margin-top: 20px;
+  }
+
+  .btn_home {
+    padding: 20px 0 0;
+  }
+
+  .btn_return {
+    padding: 0;
+  }
+
+  .btn_return a,
+  .btn_home a {
+    width: 62%;
+  }
+
+  .error {
+    padding: 40px 0 25px;
+  }
+
+  .error .title_error {
+    font-size: 150%;
+    padding: 0 10%;
+  }
+
+  .error .txt_error {
+    font-size: 100%;
+    padding: 0 10%;
+    margin: 10px 0 20px;
+  }
+
+  .shake {
+    padding: 29px 0 8px;
+  }
+  .title_shake {
+    text-align: center;
+    font-size: 142%;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .luck {
+    padding-top: 8px;
+    min-height: auto;
+  }
+
+  #wrapper .luck.spCont img:first-child {
+    display: block;
+  }
+}
+

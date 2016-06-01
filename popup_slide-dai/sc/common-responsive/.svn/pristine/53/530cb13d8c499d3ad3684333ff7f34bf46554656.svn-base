@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+
+#wrapper.top #main {
+  padding-top: 0;
+}
+/*  card
+-------------------------*/
+h2.sortTtl, #sort .sub {
+  margin-left: 0;
+}
+.pageTtl {
+  background: #CC0066;
+}
+#card #post {
+  margin-bottom: 0;
+  padding-bottom: 80px;
+}
+#card #post.clm #imgArea {
+  width: 26.5625%;
+}
+#card #post.clm #txtArea {
+  width: 73.4375%;
+}
+#card .itemList .item {
+  width: 33.3%;
+  height: 550px;
+  padding-bottom: 0;
+}
+#card .itemList .thum {
+  width: 272px;
+  height: 272px;
+}
+#card .itemList .thum img {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#card .itemList .shopName {
+  font-weight: bold;
+}
+#card .itemList .freeTxt {
+  text-align: left;
+}
+#card .itemList .txtLink {
+  margin-top: -70px;
+  padding: 0 30px 0;
+}
+#card .itemList .moreTxt {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: #ddd;
+  text-align: center;
+}
+#card .itemList .moreTxt .innerTxt {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 0 10px;
+  font-size: 12px;
+}
+#card .itemList .moreTxt .innerTxt:before {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 6px;
+  height: 6px;
+  margin-top: -5px;
+  border-top: 3px solid #666;
+  border-right: 3px solid #666;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  content: "";
+}
+#card .itemList + .pageNav {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  
+}
+@media screen and (max-width: 1260px) {
+  #card .itemList .item {
+      width: 50%;
+  }
+}
+@media screen and (max-width: 1220px) {
+
+}
+@media screen and (max-width: 1035px) {
+
+}
+@media screen and (max-width: 1025px) {
+
+}
+@media screen and (max-width: 945px) {
+  #card .itemList .item {
+    height: 500px;
+  }
+  #card .itemList .thum {
+    width: 205px;
+    height: 205px;
+  }
+}
+
+/*sp*/
+@media screen and (max-width: 767px) {
+  #wrapper.top #main {
+      padding-top: 0;
+  }
+  .itemList .wrap {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 25px 10px 10px !important;
+  }
+  .itemList .wrap {
+    padding: 30px;
+    height: 100%;
+  }
+  #card .itemList .item {
+    height: auto;
+  }
+  #card #post {
+    margin-bottom: 20px;
+    padding: 0 20px 20px;
+  }
+  #card #post.clm #imgArea {
+    width: 100%;
+  }
+  #card #post.clm #txtArea {
+    width: 100%;
+  }
+  #card #post #imgArea {
+    padding-top: 20px;
+  }
+  #card .itemList .shopName {
+    background: none;
+    padding-left: 0;
+  }
+  #card .itemList li {
+    height: auto;
+  }
+  #card .itemList .moreTxt {
+    display: none;
+  }
+  #card .itemList .txtLink {
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  .itemList .thum {
+    float: left;
+    width: 30.26316% !important;
+  }
+  #card .itemList .thum {
+    height: auto;
+  }
+  #card .itemList .thum img {
+    top: 0;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

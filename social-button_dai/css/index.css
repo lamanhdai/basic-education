@@ -1,0 +1,34 @@
+@charset "utf-8";
+/*----------------------------------------
+  .top_footer
+----------------------------------------*/
+.top_footer {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.top_footer .inner {
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.top_footer ul {
+  position: relative;
+  clear:both;
+  overflow: hidden;
+}
+.top_footer ul.social {
+  margin-bottom: 30px;
+}
+.top_footer ul.social li.sp_icon {
+  display: none;
+}
+.top_footer ul.social li {
+  margin: 0 10px;
+  display: inline;
+}
+.top_footer ul.social li iframe {
+  display: inline-block;
+  vertical-align: middle;
+}

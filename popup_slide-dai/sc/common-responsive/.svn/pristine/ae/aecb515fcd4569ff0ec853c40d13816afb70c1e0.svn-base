@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+#wrapper.top #main {
+  padding-top: 0;
+}
+#access {
+  padding: 0 20px 20px;
+}
+#access p.imgCenter {
+  text-align: center;
+}
+#access p.imgCenter img {
+  width: 730px;
+}
+#access .imgRight {
+  text-align: right;
+}
+
+/*  #index
+-------------------------*/
+#index h2 {
+  margin-top: 35px;
+}
+
+/*  #parking
+-------------------------*/
+#parking ul {
+  width: 786px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+}
+#parking ul li {
+  width: 242px;
+  float: left;
+  padding: 5px 10px;
+}
+#parking ul li a {
+  color: #333;
+  text-decoration: none;
+}
+#parking ul li a:hover {
+  text-decoration: underline;
+}
+#parking ul li span {
+  display: block;
+}
+#parking ul li span.txt {
+  padding-bottom: 5px;
+}
+#parking table td.title {
+  color: #ffffff;
+}
+#parking .bg_red {
+  background-color: #f33;
+}
+#parking .bg_yellow {
+  background-color: #fc3;
+}
+#parking .bg_blue {
+  background-color: #39f;
+}
+#parking .bg_green {
+  background-color: #6c6;
+}
+
+/*  #bus
+-------------------------*/
+#bus .note_txt {
+  background-color: #ffc;
+  padding: 10px 20px;
+  color: #555;
+}
+#bus .color_txt {
+  margin: 0;
+  background-color: #ffc;
+  color: #555;
+}
+#bus .color_txt a {
+  color: #0000ff;
+  text-decoration: underline;
+}
+#bus .box_anchor {
+  border: 1px solid #E49500;
+  background-color: #fcf7e7;
+  padding: 5px;
+  margin-bottom: 1em;
+}
+@media screen and (max-width:1280px) {
+}
+@media screen and (max-width:1260px) {
+}
+@media screen and (max-width:1220px) {
+}
+@media screen and (max-width:1035px) {
+}
+@media screen and (max-width:1025px) {
+}
+@media screen and (max-width:945px) {
+}
+
+/*sp*/
+@media screen and (max-width:767px) {
+  #access {
+    padding: 20px 10px;
+  }
+  #access p {
+    line-height: 1.5em;
+  }
+
+  /*  #index
+  -------------------------*/
+  #index h2 {
+    margin-top: 25px;
+  }
+
+  /*  #parking
+  -------------------------*/
+  #parking img {
+    width: 100%;
+    height: auto;
+  }
+  #parking .bgGray {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #CCC;
+    font-weight: bold;
+  }
+  #parking ul {
+    width: 100%;
+    margin: 0;
+  }
+  #parking ul li {
+    width: 100%;
+    float: none;
+    padding: 0;
+    margin-top: 5px;
+  }
+  #parking ul li span.txt {
+    padding-bottom: 5px;
+  }
+  #parking .ico_txt span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #parking .ico_txt img {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+  }
+  #parking table a {
+    text-decoration: underline;
+  }
+  #parking table.detaiParking img {
+    width: auto;
+    height: auto;
+  }
+  #parking .imgRight a span {
+    text-decoration: underline;
+  }
+
+  /*  #bus
+  -------------------------*/
+  #bus .margin_row {
+    margin: 1em 0;
+  }
+  #bus .margin_row img {
+    margin: 0;
+    vertical-align: top;
+  }
+  #bus .number_txt {
+    font-weight: bold;
+  }
+  #bus .item_link a, #bus .box_anchor a {
+    text-decoration: underline;
+    color: #b50080;
+    font-weight: bold;
+  }
+  #bus .box_anchor {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,13 @@
+https://about.twitter.com/ja/resources/buttons#tweet
+
+http://developer.mixi.co.jp/connect/mixi_plugin/mixi_check/spec_mixi_check/
+
+https://developers.facebook.com/docs/plugins/share-button?locale=vi_VN
+
+https://media.line.me/howto/ja/?buttonType=a&textType=input
+
+https://developers.facebook.com/docs/plugins/like-button  (ja_JP)
+
+http://crunchify.com/list-of-all-social-sharing-urls-for-handy-reference-social-media-sharing-buttons-without-javascript/
+
+https://developers.google.com/+/web/+1button/
